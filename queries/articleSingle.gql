@@ -1,0 +1,52 @@
+query articleSingle($documentId: ID!, $status: PublicationStatus) {
+  article(documentId: $documentId, status: $status) {
+    author {
+      avatar {
+        alternativeText
+        url
+      }
+    }
+    category {
+      name
+      slug
+    }
+    cover {
+      alternativeText
+      url
+    }
+    description
+    documentId
+    publishedAt
+    slug
+    title
+    blocks {
+      ... on ComponentSharedMedia {
+        file {
+          alternativeText
+          url
+        }
+        id
+      }
+      ... on ComponentSharedQuote {
+        body
+        title
+        id
+      }
+      ... on ComponentSharedRichText {
+        body
+        id
+      }
+      ... on ComponentSharedSlider {
+        files {
+          alternativeText
+          url
+        }
+        id
+      }
+      ... on Error {
+        code
+        message
+      }
+    }
+  }
+}

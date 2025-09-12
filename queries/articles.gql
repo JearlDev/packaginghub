@@ -1,4 +1,4 @@
-query allArticles {
+query articles {
   articles {
     documentId
     title

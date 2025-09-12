@@ -1,8 +1,13 @@
 <template>
   <div>
-    <p>There are {{ data.articles.length }} articles.</p>
+    <p>There are {{ dataSingle }} articles.</p>
   </div>
 </template>
 <script setup>
-const data = await GqlAllArticles();
+// const data = await GqlArticles();
+
+const dataSingle = await GqlArticleSingle({
+  documentId: "r6r9nthsjhh8b6sznjuq25j4",
+  status: "PUBLISHED",
+});
 </script>
