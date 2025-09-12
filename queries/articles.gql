@@ -1,0 +1,25 @@
+query allArticles {
+  articles {
+    documentId
+    title
+    slug
+    description
+    author {
+      name
+      email
+      avatar {
+        url
+        alternativeText
+      }
+    }
+    category {
+      name
+      slug
+    }
+    cover {
+      url
+      alternativeText
+    }
+    createdAt
+  }
+}
