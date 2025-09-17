@@ -13,7 +13,6 @@
         <nuxt-link
           :to="{
             path: `/blog/${article.slug}`,
-            query: { id: article.documentId },
           }"
           class="text-blue-500 hover:underline"
           >Read More</nuxt-link

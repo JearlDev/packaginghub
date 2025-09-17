@@ -1,16 +1,23 @@
 <template>
   <div>
-    <h1>{{ data.article.title }}</h1>
+    <h1>{{ article.title }}</h1>
   </div>
 </template>
 <script setup>
+import { onMounted } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const documentId = route.query.id;
+const slug = route.path.replace("/blog/", "");
+
+// onMounted(() => {
+//   console.log("Route query:", slug);
+//   console.log("Route query:", data);
+// });
 
 const data = await GqlArticleSingle({
-  documentId: documentId,
-  status: "PUBLISHED",
+  slug: slug,
 });
+
+const article = data.articles[0];
 </script>

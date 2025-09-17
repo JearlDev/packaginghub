@@ -1,5 +1,5 @@
-query articleSingle($documentId: ID!, $status: PublicationStatus) {
-  article(documentId: $documentId, status: $status) {
+query articleSingle($slug: String!) {
+  articles(filters: { slug: { eq: $slug } }) {
     author {
       avatar {
         alternativeText
