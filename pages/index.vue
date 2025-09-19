@@ -7,9 +7,9 @@
           src="/images/logo.png"
           alt="packaginghub logo"
         />
-        <div class="flex items-center gap-10">
-          <nav>
-            <ul class="flex items-center gap-5 h5">
+        <div class="flex lg:items-center gap-10">
+          <nav class="hidden lg:block h6">
+            <ul class="flex items-center gap-5 font-medium">
               <li>
                 <a href="/" class="hover:text-accent transition-colors">Home</a>
               </li>
@@ -34,20 +34,11 @@
         </div>
       </div>
     </header>
-    <section class="container py-10 lg:py-20">
-      <h1>Welcome to Packaging Hub</h1>
-      <h2>Your one-stop solution for all packaging needs</h2>
-      <h3>We provide innovative and sustainable packaging solutions</h3>
-      <h4>Customized packaging solutions for your business</h4>
-      <h5>Flexible and scalable packaging options</h5>
-      <h6>Your partners in packaging</h6>
-      <p>
-        At Packaging Hub, we understand that every business has unique packaging
-        needs. That's why we offer a wide range of customizable packaging
-        solutions designed to meet your specific requirements. Whether you need
-        eco-friendly materials, innovative designs, or scalable production
-        capabilities, we've got you covered.
-      </p>
+    <section class="py-10 lg:py-20">
+      <div class="container">
+        <h1>Welcome to <span class="text-accent">Packaging Hub</span></h1>
+        <p>Your partners in packaging</p>
+      </div>
     </section>
   </div>
 </template>
