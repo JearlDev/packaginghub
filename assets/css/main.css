@@ -10,12 +10,12 @@
 
 /* spacing */
 .container {
-  @apply mx-auto px-5 md:px-7;
+  @apply mx-auto px-4 md:px-7;
 }
 
 /* typography */
 body {
-  @apply font-secondary font-light leading-[1.5] text-primary/90;
+  @apply font-secondary leading-[1.5] text-secondary;
 }
 
 h1,
@@ -30,7 +30,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  @apply font-primary font-bold uppercase text-primary;
+  @apply font-primary font-semibold uppercase text-primary;
 }
 
 h1,
@@ -56,4 +56,12 @@ h5,
 h6,
 .h6 {
   @apply lg:text-lg leading-[1.4];
+}
+
+/* buttons */
+.btn {
+  @apply inline-block font-primary font-semibold uppercase tracking-wider text-center no-underline transition-all duration-300 ease-in-out;
+}
+.btn-primary {
+  @apply bg-accent text-primary px-6 py-3 rounded-full hover:bg-primary hover:text-accent;
 }

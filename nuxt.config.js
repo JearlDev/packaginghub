@@ -13,8 +13,8 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   googleFonts: {
     families: {
-      Montserrat: true,
-      "Open Sans": true,
+      Montserrat: [200, 300, 400, 500, 600, 700, 800, 900],
+      "Open Sans": [200, 300, 400, 500, 600, 700, 800, 900],
     },
   },
   compatibilityDate: "2025-07-15",
