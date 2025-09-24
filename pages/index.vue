@@ -2,10 +2,74 @@
   <div>
     <Header />
     <Hero />
-    <section
-      class="py-10 lg:py-20 border-t border-secondary/20 md:border-secondary/10"
-    >
-      <div class="container relative h-[550px]"></div>
+    <section class="py-10 lg:py-20 bg-secondary/5">
+      <div class="container relative grid grid-cols-5 gap-7 md:gap-10">
+        <img
+          class="w-full md:w-auto md:h-[44vw] lg:h-[40vw] xl:h-[35vw] object-contain col-span-5 md:col-span-2"
+          src="/images/about-main.png"
+          alt="packaginghub packaging"
+        />
+        <div class="col-span-5 md:col-span-3">
+          <div class="max-w-[700px]">
+            <h2>A dynamic print company</h2>
+            <p>
+              Packaging Hub is a dynamic packaging Company originally
+              established to help small to medium-size businesses with all their
+              packaging needs, concentrating mainly on the manufacturing of
+              folded cartons.
+            </p>
+            <p>
+              We are a phone call away to help you source packaging that will
+              give your products the shelf shout it deserves.
+            </p>
+            <p>
+              Feel free to call us on
+              <a href="tel:0215553879">021 555 3879</a> or email us
+              <a href="mailto:sales@pakhub.co.za">sales@pakhub.co.za</a>
+            </p>
+            <div class="pt-7">
+              <a href="/about" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-10 lg:py-20">
+      <div class="container">
+        <div class="max-w-[700px] mx-auto text-center">
+          <h2>A dynamic print company</h2>
+          <p>
+            All our products are made to the highest standard ensuring that all
+            board and inks are FDA® accredited. We also have a FSC®
+            certification allowing our clients to print the FSC® logo on their
+            cartons. Our licence number is FSC -C161939. This will show your
+            customers that all board sourced for your packaging comes from
+            sustainable forestry, meaning you are doing your bit to ensure our
+            forests are alive for years to come.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 pt-7 md:pt-10">
+          <div
+            v-for="i in 6"
+            :key="i"
+            class="p-5 border border-secondary/20 rounded-lg text-center hover:shadow-md hover:scale-105 transition-all duration-150 ease-out"
+          >
+            <img
+              class="w-full max-h-56 object-contain"
+              src="/images/about-main.png"
+              alt="packaginghub packaging"
+            />
+            <h3 class="h5 pt-4 !text-accent">Litho Laminated Cartons</h3>
+            <p>
+              We mount printed sheets to fluted board to create your classic
+              litho laminated cartons.
+            </p>
+            <div class="pt-7 pb-3">
+              <a href="/about" class="btn btn-primary">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>

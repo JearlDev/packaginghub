@@ -58,8 +58,57 @@ h6,
   @apply lg:text-lg leading-[1.4];
 }
 
+p,
+ul:not(header ul, footer ul) {
+  @apply pt-4;
+}
+
+ul:not(header ul) {
+  @apply list-disc list-inside;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
+.h1 + p,
+.h2 + p,
+.h3 + p,
+.h4 + p,
+.h5 + p,
+.h6 + p {
+  @apply pt-2 lg:pt-3;
+}
+
+a:not(a.btn, header a) {
+  @apply text-accent font-semibold;
+}
 a:hover:not(a.btn, nav a) {
   @apply underline;
+}
+
+.dark-bg p,
+.dark-bg ul {
+  @apply text-white/90;
+}
+.dark-bg a:not(a.btn, header a) {
+  @apply !text-white font-semibold;
+}
+.dark-bg h1,
+.dark-bg h2,
+.dark-bg h3,
+.dark-bg h4,
+.dark-bg h5,
+.dark-bg h6,
+.dark-bg .h1,
+.dark-bg .h2,
+.dark-bg .h3,
+.dark-bg .h4,
+.dark-bg .h5,
+.dark-bg .h6 {
+  @apply text-white;
 }
 
 /* buttons */
@@ -68,4 +117,7 @@ a:hover:not(a.btn, nav a) {
 }
 .btn-primary {
   @apply bg-accent text-white px-6 py-3 rounded-full hover:bg-secondary;
+}
+.btn-secondary {
+  @apply bg-secondary text-white px-6 py-3 rounded-full hover:bg-primary;
 }

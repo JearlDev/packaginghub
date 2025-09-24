@@ -5,7 +5,7 @@
     >
       <div class="max-w-[700px]">
         <h1><span class="text-accent">Packaging </span>Hub</h1>
-        <p class="lg:text-xl pt-2 max-w-56 lg:max-w-[unset]">
+        <p class="lg:text-xl max-w-56 lg:max-w-[unset]">
           Welcome to Packaging Hub. Your partners in packaging.
         </p>
         <div class="pt-6 md:pt-10">

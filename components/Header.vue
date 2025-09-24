@@ -1,6 +1,10 @@
 <template>
   <header>
-    <div class="fixed top-0 left-0 w-full z-[2]">
+    <div
+      :class="`fixed top-0 left-0 w-full z-[2] ${
+        isScrolled ? '-translate-y-[36px]' : 'translate-y-0'
+      } transition-all duration-300 ease-out`"
+    >
       <div class="bg-accent text-white py-2 relative z-[3]">
         <ul class="container flex justify-start gap-5 text-sm">
           <li>
@@ -43,20 +47,24 @@
         </ul>
       </div>
       <div
-        class="h-32 border-b border-secondary/20 md:border-secondary/10 bg-white relative z-[3]"
+        :class="`${
+          isScrolled ? 'h-28' : 'h-32'
+        } border-b border-secondary/20 bg-white relative z-[3] transition-all duration-300 ease-out`"
       >
         <div class="h-full container flex items-center justify-between">
           <a href="/">
             <img
-              class="h-24 object-contain"
+              :class="`${
+                isScrolled ? 'h-20' : 'h-24'
+              } object-contain transition-all duration-300 ease-out`"
               src="/images/logo.png"
               alt="packaginghub logo"
             />
           </a>
-          <div class="flex items-center gap-5 md:gap-10">
+          <div class="flex items-center gap-5 lg:gap-10">
             <!-- Mobile Menu Button -->
             <button
-              class="md:hidden relative w-9 h-9 flex items-center justify-center"
+              class="lg:hidden relative w-9 h-9 flex items-center justify-center"
               @click="toggleMenu"
             >
               <div class="relative w-6 h-6">
@@ -91,17 +99,19 @@
       </div>
       <!-- Mobile Menu -->
       <div
-        class="md:hidden bg-white shadow-md absolute z-[2] w-full left-0 right-0 top-[164px] duration-300 transition-all"
+        class="lg:hidden bg-white shadow-md absolute z-[2] w-full left-0 right-0 duration-300 transition-all"
         :class="{
           'max-h-96': menuOpen,
           'max-h-0 overflow-hidden': !menuOpen,
+          'top-[148px]': isScrolled,
+          'top-[164px]': !isScrolled,
         }"
       >
         <ul
-          :class="`flex flex-col p-6 transition-all duration-300 ${
+          :class="`flex flex-col py-6 container transition-all duration-300 ${
             menuOpen
               ? 'opacity-100 translate-y-0'
-              : 'opacity-0 -translate-y-[100%]'
+              : 'opacity-0 -translate-y-[20%]'
           }`"
         >
           <li
@@ -121,8 +131,21 @@
   </header>
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 const menuOpen = ref(false);
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 300;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
