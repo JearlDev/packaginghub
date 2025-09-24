@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <header class="fixed top-0 left-0 w-full z-[2]">
+  <header>
+    <div class="fixed top-0 left-0 w-full z-[2]">
       <div class="bg-accent text-white py-2 relative z-[3]">
         <ul class="container flex justify-start gap-5 text-sm">
           <li>
@@ -116,9 +116,9 @@
           </li>
         </ul>
       </div>
-    </header>
+    </div>
     <div class="h-[164px]"></div>
-  </div>
+  </header>
 </template>
 <script setup>
 import { ref } from "vue";
