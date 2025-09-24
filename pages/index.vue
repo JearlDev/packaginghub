@@ -1,45 +1,28 @@
 <template>
   <div>
-    <header class="h-32 bg-secondary/10">
-      <div class="h-full container flex items-center justify-between">
-        <img
-          class="h-24 object-contain"
-          src="/images/logo.png"
-          alt="packaginghub logo"
-        />
-        <div class="flex lg:items-center gap-10">
-          <nav class="hidden lg:block h6">
-            <ul class="flex items-center gap-5 font-medium">
-              <li>
-                <a href="/" class="hover:text-accent transition-colors">Home</a>
-              </li>
-              <li>
-                <a href="/about" class="hover:text-accent transition-colors"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a href="/services" class="hover:text-accent transition-colors"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a href="/contact" class="hover:text-accent transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <a href="/contact" class="btn btn-primary">Get in Touch</a>
+    <Header />
+    <section class="py-10 lg:py-20 overflow-hidden">
+      <div
+        class="container relative h-[270px] lg:h-[25vw] xl:h-[23vw] 2xl:h-[24vw]"
+      >
+        <div class="max-w-[700px]">
+          <h1><span class="text-accent">Packaging </span>Hub</h1>
+          <p class="lg:text-xl pt-2 max-w-56 lg:max-w-[unset]">
+            Welcome to Packaging Hub. Your partners in packaging.
+          </p>
+          <div class="pt-6 md:pt-10">
+            <a href="/contact" class="btn btn-primary">Get in Touch</a>
+          </div>
         </div>
+        <img
+          src="/images/homepage-bg-2.png"
+          alt="Packaging Hub"
+          class="absolute rotate-[-33deg] md:rotate-[-10deg] lg:rotate-[unset] -right-16 top-20 md:top-7 lg:top-10 xl:top-0 md:right-0 h-[36vw] md:h-[25vw] object-contain"
+        />
       </div>
-    </header>
-    <section class="py-10 lg:py-20">
-      <div class="container">
-        <h1>Welcome to <span class="text-accent">Packaging Hub</span></h1>
-        <p>Your partners in packaging</p>
-      </div>
+    </section>
+    <section class="py-10 lg:py-20 bg-secondary/10">
+      <div class="container relative h-[550px]"></div>
     </section>
   </div>
 </template>
-<script setup></script>
