@@ -68,7 +68,7 @@
                 </li>
               </ul>
             </nav>
-            <a href="/contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#" class="btn btn-primary">Get in Touch</a>
           </div>
         </div>
       </div>
@@ -133,15 +133,15 @@ const navItems = [
   },
   {
     title: "Products",
-    link: "/products",
+    link: "#",
   },
   {
     title: "About",
-    link: "/about",
+    link: "#",
   },
   {
     title: "Contact",
-    link: "/contact",
+    link: "#",
   },
 ];
 </script>

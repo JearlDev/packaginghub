@@ -9,7 +9,7 @@
           Welcome to Packaging Hub. Your partners in packaging.
         </p>
         <div class="pt-6 md:pt-10">
-          <a href="/contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#" class="btn btn-primary">Get in Touch</a>
         </div>
       </div>
       <img
