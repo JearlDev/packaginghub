@@ -78,8 +78,8 @@
         :class="{
           'max-h-96': menuOpen,
           'max-h-0 overflow-hidden': !menuOpen,
-          'top-[148px]': isScrolled,
-          'top-[164px]': !isScrolled,
+          'top-[106px] pt-10': isScrolled,
+          'top-[124px] pt-10': !isScrolled,
         }"
       >
         <ul
