@@ -76,8 +76,8 @@
       <div
         class="lg:hidden bg-white shadow-md absolute z-[2] w-full left-0 right-0 duration-300 transition-all"
         :class="{
-          'max-h-96': menuOpen,
-          'max-h-0 overflow-hidden': !menuOpen,
+          'max-h-96 opacity-100': menuOpen,
+          'max-h-0 opacity-0 overflow-hidden': !menuOpen,
           'top-[106px] pt-10': isScrolled,
           'top-[124px] pt-10': !isScrolled,
         }"
