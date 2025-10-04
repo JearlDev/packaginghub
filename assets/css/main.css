@@ -66,6 +66,9 @@ ul:not(header ul, footer ul) {
 ul:not(header ul) {
   @apply list-disc list-inside;
 }
+ol {
+  @apply list-decimal list-inside;
+}
 
 h1 + p,
 h2 + p,

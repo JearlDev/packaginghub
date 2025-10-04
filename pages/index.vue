@@ -1,7 +1,8 @@
 <template>
   <div>
     <Header />
-    <Hero />
+    <HomeHero />
+    <!-- image-content / about section -->
     <section class="pb-12 md:py-12 lg:py-20 bg-secondary/5 relative">
       <div class="container grid grid-cols-4 gap-7 md:gap-14 items-center">
         <img
@@ -17,22 +18,13 @@
         /> -->
         <div class="col-span-4 md:col-span-2">
           <div class="max-w-[700px]">
-            <h2>A dynamic print company</h2>
-            <p>
-              Packaging Hub is a dynamic packaging Company originally
-              established to help small to medium-size businesses with all their
-              packaging needs, concentrating mainly on the manufacturing of
-              folded cartons.
-            </p>
-            <p>
-              We are a phone call away to help you source packaging that will
-              give your products the shelf shout it deserves.
-            </p>
-            <p>
-              Feel free to call us on
-              <a href="tel:0215553879">021 555 3879</a> or email us
-              <a href="mailto:sales@pakhub.co.za">sales@pakhub.co.za</a>
-            </p>
+            <h2 v-if="sections?.about?.heading">
+              {{ sections.about.heading }}
+            </h2>
+            <ElementsRichText
+              v-if="sections?.about?.description"
+              :content="sections.about.description"
+            />
             <div class="pt-7">
               <a href="#" class="btn btn-secondary">Learn More</a>
             </div>
@@ -101,3 +93,14 @@
     <Footer />
   </div>
 </template>
+<script setup>
+import { onMounted } from "vue";
+
+const data = await GqlHome();
+
+const sections = data.home;
+
+onMounted(() => {
+  console.log("Home data:", sections.about.description);
+});
+</script>

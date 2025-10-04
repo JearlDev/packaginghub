@@ -1,0 +1,26 @@
+query home {
+  home {
+    hero {
+      description
+      heading
+      cta {
+        link
+        openInNewTab
+        text
+      }
+    }
+    about {
+      heading
+      description
+      image {
+        alternativeText
+        url
+      }
+      cta {
+        link
+        text
+        openInNewTab
+      }
+    }
+  }
+}
