@@ -6,7 +6,7 @@
     <section class="pb-12 md:py-12 lg:py-20 bg-secondary/5 relative">
       <div class="container grid grid-cols-4 gap-7 md:gap-14 items-center">
         <img
-          class="absolute top-0 right-0 md:relative h-72 md:h-[450px] w-full object-cover md:rounded-lg col-span-4 md:col-span-2"
+          class="absolute top-0 right-0 md:relative h-72 md:h-[450px] w-full object-cover md:rounded-lg col-span-4 md:col-span-2 md:order-1"
           src="/images/campaign-creators-e6n7uoEnYbA-unsplash (2).jpg"
           alt="packaginghub packaging"
         />
@@ -16,7 +16,7 @@
           src="/images/about-main.png"
           alt="packaginghub packaging"
         /> -->
-        <div class="col-span-4 md:col-span-2">
+        <div class="col-span-4 md:col-span-2 md:order-2">
           <div class="max-w-[700px]">
             <h2 v-if="sections?.about?.heading">
               {{ sections.about.heading }}
