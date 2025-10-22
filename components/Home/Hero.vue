@@ -5,11 +5,11 @@
     >
       <div class="max-w-[700px]">
         <h1><span class="text-accent">Packaging </span>Hub</h1>
-        <p class="lg:text-xl max-w-56 lg:max-w-[unset]">
-          Welcome to Packaging Hub. Your partners in packaging.
+        <p v-if="data?.description" class="lg:text-xl max-w-56 lg:max-w-[unset]">
+          {{data.description}}
         </p>
-        <div class="pt-6 md:pt-10">
-          <a href="#" class="btn btn-primary">Get in Touch</a>
+        <div v-if="data?.cta" class="pt-6 md:pt-10">
+          <a :href="data.cta.link" :target="data.cta.openInNewTab ? '_blank' : '_self'" class="btn btn-primary">{{data.cta.text}}</a>
         </div>
       </div>
       <img
@@ -20,3 +20,11 @@
     </div>
   </section>
 </template>
+<script setup>
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
+</script>

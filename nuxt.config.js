@@ -25,7 +25,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      BACKEND_URL: process.env.GQL_HOST || "http://localhost:1337/graphql",
+      GQL_HOST: process.env.GQL_HOST || "http://localhost:1337/graphql",
+      BACKEND_URL: process.env.BACKEND_URL || "http://localhost:1337",
     },
   },
 });

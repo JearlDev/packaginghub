@@ -22,5 +22,41 @@ query home {
         openInNewTab
       }
     }
+    featuredProducts {
+      description
+      heading
+      featuredProducts {
+        documentId
+        description
+        cta {
+          link
+          openInNewTab
+          text
+        }
+        image {
+          alternativeText
+          url
+          width
+          height
+        }
+        title
+        publishedAt
+      }
+    }
+    banner {
+      image {
+        alternativeText
+        url
+        width
+        height
+      }
+      heading
+      description
+      cta {
+        link
+        openInNewTab
+        text
+      }
+    }
   }
 }

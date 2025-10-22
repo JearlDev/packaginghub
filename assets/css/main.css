@@ -124,3 +124,6 @@ a:hover:not(a.btn, nav a) {
 .btn-secondary {
   @apply bg-secondary text-white px-6 py-3 rounded-full hover:bg-primary;
 }
+.btn-tertiary {
+  @apply bg-transparent text-secondary px-6 py-3 rounded-full hover:text-secondary/80;
+}
