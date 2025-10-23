@@ -8,19 +8,14 @@
             <div
               class="flex flex-col items-center md:items-start text-center md:text-left gap-10"
             >
-              <div>
+              <div v-if="address">
                 <h3 class="h3 font-bold mb-2 !text-accent">Address</h3>
-                <p>Unit 5 Henton Park,</p>
-                <p>25 Stella Road,</p>
-                <p>Montague Gardens.</p>
-                <p>Cape Town</p>
+                <ElementsRichText v-if="address" :content="address" />
               </div>
 
-              <div>
+              <div v-if="officeHours">
                 <h3 class="h3 font-bold mb-2 !text-accent">Office Hours</h3>
-                <p>M-T: 8am – 4.30pm</p>
-                <p>Friday: 8am – 3pm</p>
-                <p>S-S: Closed</p>
+                <ElementsRichText v-if="officeHours" :content="officeHours" />
               </div>
             </div>
           </div>
@@ -30,19 +25,32 @@
             <div
               class="flex flex-col items-center md:items-start text-center md:text-left gap-10"
             >
-              <div>
+              <div v-if="phone || email">
                 <h3 class="h3 font-bold mb-2 !text-accent">Contact</h3>
-                <p><a href="tel:+27215553879">+27 21 555 3879</a></p>
                 <p>
-                  <a href="mailto:kevin@packhub.co.za">kevin@packhub.co.za</a>
+                  <a :href="`tel:${phone}`">{{ phone }}</a>
+                </p>
+                <p>
+                  <a :href="`mailto:${email}`">{{ email }}</a>
                 </p>
               </div>
 
-              <div>
+              <div
+                v-if="
+                  socials &&
+                  (socials.instagramLink ||
+                    socials.facebookLink ||
+                    socials.linkedinLink ||
+                    socials.twitterLink ||
+                    socials.youtubeLink ||
+                    socials.tiktokLink)
+                "
+              >
                 <h3 class="h3 font-bold mb-2 !text-accent">Follow Us</h3>
                 <div class="flex justify-center md:justify-start gap-4 mt-5">
                   <a
-                    href="#"
+                    v-if="socials.instagramLink"
+                    :href="socials.instagramLink"
                     class="hover:opacity-80 transition-opacity duration-150"
                     ><img
                       height="32"
@@ -51,7 +59,8 @@
                       alt="instagram icon"
                   /></a>
                   <a
-                    href="#"
+                    v-if="socials.facebookLink"
+                    :href="socials.facebookLink"
                     class="hover:opacity-80 transition-opacity duration-150"
                     ><img
                       height="32"
@@ -60,13 +69,54 @@
                       alt="facebook icon"
                   /></a>
                   <a
-                    href="#"
+                    v-if="socials.whatsappLink"
+                    :href="socials.whatsappLink"
+                    class="hover:opacity-80 transition-opacity duration-150"
+                    ><img
+                      height="32"
+                      width="32"
+                      src="/icons/whatsapp.svg"
+                      alt="whatsapp icon"
+                  /></a>
+                  <a
+                    v-if="socials.linkedinLink"
+                    :href="socials.linkedinLink"
                     class="hover:opacity-80 transition-opacity duration-150"
                     ><img
                       height="32"
                       width="32"
                       src="/icons/linkedin.svg"
                       alt="linkedin icon"
+                  /></a>
+                  <a
+                    v-if="socials.tiktokLink"
+                    :href="socials.tiktokLink"
+                    class="hover:opacity-80 pt-[1px] transition-opacity duration-150"
+                    ><img
+                      height="31"
+                      width="31"
+                      src="/icons/tiktok.svg"
+                      alt="tiktok icon"
+                  /></a>
+                  <a
+                    v-if="socials.twitterLink"
+                    :href="socials.twitterLink"
+                    class="hover:opacity-80 pt-[1.5px] transition-opacity duration-150"
+                    ><img
+                      height="31"
+                      width="31"
+                      src="/icons/x.svg"
+                      alt="x icon"
+                  /></a>
+                  <a
+                    v-if="socials.youtubeLink"
+                    :href="socials.youtubeLink"
+                    class="hover:opacity-80 pt-[1px] transition-opacity duration-150"
+                    ><img
+                      height="32"
+                      width="42"
+                      src="/icons/youtube.svg"
+                      alt="youtube icon"
                   /></a>
                 </div>
               </div>
@@ -143,11 +193,43 @@
     <div class="bg-primary py-7 dark-bg">
       <div class="container">
         <div class="text-center text-white">
-          &copy; {{ new Date().getFullYear() }} Packaging Hub. Designed &
-          developed by
+          &copy; {{ new Date().getFullYear() }}
+          {{ siteName || "Packaging Hub" }}. Designed & developed by
           <a href="https://joshearly.co.za" target="_blank">Josh Early</a>
         </div>
       </div>
     </div>
   </footer>
 </template>
+<script setup>
+const props = defineProps({
+  siteName: {
+    type: String,
+    required: false,
+  },
+  phone: {
+    type: String,
+    required: false,
+  },
+  email: {
+    type: String,
+    required: false,
+  },
+  address: {
+    type: Array,
+    required: false,
+  },
+  officeHours: {
+    type: Array,
+    required: false,
+  },
+  socials: {
+    type: Object,
+    required: false,
+  },
+  form: {
+    type: Object,
+    required: false,
+  },
+});
+</script>

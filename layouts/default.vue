@@ -1,0 +1,28 @@
+<template>
+  <div>
+    <Header
+      :logo="data?.global?.siteLogo"
+      :mainMenu="data?.global?.mainMenu"
+      :mainCTA="data?.global?.mainCTA"
+      :phone="data?.global?.companyPhoneNumber"
+      :email="data?.global?.companyEmail"
+    />
+    <slot />
+    <Footer
+      :phone="data?.global?.companyPhoneNumber"
+      :email="data?.global?.companyEmail"
+      :address="data?.global?.address"
+      :officeHours="data?.global?.officeHours"
+      :socials="data?.global?.socials"
+      :siteName="data?.global?.siteName"
+    />
+  </div>
+</template>
+
+<script setup>
+const data = await GqlGlobal();
+
+onMounted(() => {
+  console.log("Global data:", data);
+});
+</script>

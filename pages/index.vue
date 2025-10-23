@@ -1,11 +1,9 @@
 <template>
   <div>
-    <Header />
     <HomeHero :data="sections?.hero" />
     <HomeAbout :data="sections?.about" />
     <HomeFeaturedProducts :data="sections?.featuredProducts" />
     <HomeBanner :data="sections?.banner" />
-    <Footer />
   </div>
 </template>
 <script setup>

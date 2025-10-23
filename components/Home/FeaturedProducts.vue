@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 lg:py-20">
+  <section id="products" class="py-12 lg:py-20">
     <div class="container">
       <div class="max-w-[700px] mx-auto text-center">
         <h2 v-if="data?.heading">{{ data.heading }}</h2>

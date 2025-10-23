@@ -1,0 +1,44 @@
+query Global {
+  global {
+    siteName
+    siteDescription
+    siteLogo {
+      alternativeText
+      url
+    }
+    favicon {
+      url
+    }
+    defaultSeo {
+      metaDescription
+      metaTitle
+      shareImage {
+        url
+      }
+    }
+    address
+    companyEmail
+    companyPhoneNumber
+    officeHours
+    mainCTA {
+      link
+      openInNewTab
+      text
+    }
+    mainMenu {
+      id
+      link
+      openInNewTab
+      text
+    }
+    socials {
+      facebookLink
+      instagramLink
+      linkedinLink
+      tiktokLink
+      twitterLink
+      youtubeLink
+      whatsappLink
+    }
+  }
+}

@@ -7,16 +7,16 @@
     >
       <div class="bg-accent text-white py-2 relative z-[3]">
         <ul class="container flex justify-start gap-5 text-sm">
-          <li>
-            <a href="tel:0215553879" class="flex gap-2 items-center"
+          <li v-if="phone">
+            <a :href="`tel:${phone}`" class="flex gap-2 items-center"
               ><img src="/icons/phone.svg" alt="phone icon" />
-              <span>+21 555 3879</span></a
+              <span>{{ phone }}</span></a
             >
           </li>
-          <li>
-            <a href="mailto:kevin@packhub.co.za" class="flex gap-2 items-center"
+          <li v-if="email">
+            <a :href="`mailto:${email}`" class="flex gap-2 items-center"
               ><img src="/icons/email.svg" alt="email icon" />
-              <span>kevin@packhub.co.za</span></a
+              <span>{{ email }}</span></a
             >
           </li>
         </ul>
@@ -32,8 +32,8 @@
               :class="`${
                 isScrolled ? 'h-20' : 'h-24'
               } object-contain transition-all duration-300 ease-out`"
-              src="/images/logo.png"
-              alt="packaginghub logo"
+              :src="getImageUrl(logo?.url) || '/images/logo.png'"
+              :alt="logo?.alternativeText || 'Packaging Hub logo'"
             />
           </a>
           <div class="flex items-center gap-5 lg:gap-10">
@@ -57,23 +57,26 @@
                 ></span>
               </div>
             </button>
-            <nav class="hidden lg:block h6">
+            <nav v-if="mainMenu?.length" class="hidden lg:block h6">
               <ul class="flex items-center gap-5 font-medium">
-                <li v-for="(item, index) in navItems" :key="index">
+                <li v-for="(item, index) in mainMenu" :key="index">
                   <a
                     :href="item.link"
                     class="text-secondary hover:text-accent transition-colors"
-                    >{{ item.title }}</a
+                    >{{ item.text }}</a
                   >
                 </li>
               </ul>
             </nav>
-            <a href="#" class="btn btn-primary">Get in Touch</a>
+            <a v-if="mainCTA" :href="mainCTA.link" class="btn btn-primary">{{
+              mainCTA.text
+            }}</a>
           </div>
         </div>
       </div>
       <!-- Mobile Menu -->
       <div
+        v-if="mainMenu?.length"
         class="lg:hidden bg-white shadow-md absolute z-[2] w-full left-0 right-0 duration-300 transition-all"
         :class="{
           'max-h-96 opacity-100': menuOpen,
@@ -90,14 +93,14 @@
           }`"
         >
           <li
-            v-for="(item, index) in navItems"
+            v-for="(item, index) in mainMenu"
             :key="index"
             class="border-secondary/20 py-3 mb-1 !text-secondary h5"
             :class="{
-              'border-b': index !== navItems.length - 1,
+              'border-b': index !== mainMenu.length - 1,
             }"
           >
-            <a :href="item.link">{{ item.title }}</a>
+            <a :href="item.link">{{ item.text }}</a>
           </li>
         </ul>
       </div>
@@ -107,6 +110,31 @@
 </template>
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+const { getImageUrl } = useImage();
+
+const props = defineProps({
+  logo: {
+    type: Object,
+    required: false,
+  },
+  mainMenu: {
+    type: Array,
+    required: false,
+  },
+  mainCTA: {
+    type: Object,
+    required: false,
+  },
+  phone: {
+    type: String,
+    required: false,
+  },
+  email: {
+    type: String,
+    required: false,
+  },
+});
+
 const menuOpen = ref(false);
 const isScrolled = ref(false);
 
@@ -125,23 +153,4 @@ onUnmounted(() => {
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
 };
-
-const navItems = [
-  {
-    title: "Home",
-    link: "/",
-  },
-  {
-    title: "Products",
-    link: "#",
-  },
-  {
-    title: "About",
-    link: "#",
-  },
-  {
-    title: "Contact",
-    link: "#",
-  },
-];
 </script>
