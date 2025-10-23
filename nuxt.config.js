@@ -21,6 +21,10 @@ export default defineNuxtConfig({
   sitemap: {
     url: process.env.NUXT_SITE_URL || "https://site-packaginghub.netlify.app/",
     name: process.env.NUXT_SITE_NAME || "Packaging Hub",
+    exclude: [
+      "/blog/**", // Excludes all pages under /blog TODO: undo when blogs added
+      "/blog", // Excludes a specific page TODO: undo when blogs added
+    ],
   },
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
