@@ -135,7 +135,14 @@ const props = defineProps({
   },
 });
 
+// Mobile menu state
 const menuOpen = ref(false);
+
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
+
+// Scroll state
 const isScrolled = ref(false);
 
 const handleScroll = () => {
@@ -149,8 +156,4 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
-
-const toggleMenu = () => {
-  menuOpen.value = !menuOpen.value;
-};
 </script>

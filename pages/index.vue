@@ -7,19 +7,22 @@
   </div>
 </template>
 <script setup>
-import { onMounted } from "vue";
 import { useRuntimeConfig } from "#app";
 import { useRoute } from "vue-router";
 
+// Get page content (sections) and SEO data
 const data = await GqlHome();
 
 const sections = data.home;
 const seoData = data?.home?.pageSEO;
 
+// Setup for SEO meta tags and canonical URL
 const config = useRuntimeConfig();
+
 const frontendUrl = config.public.FRONTEND_URL;
 const defaultMetaTitle = config.public.DEFAULT_META_TITLE;
 const defaultMetaDescription = config.public.DEFAULT_META_DESCRIPTION;
+
 const route = useRoute();
 
 const currentPath = route.path === "/" ? "" : route.path;
@@ -36,9 +39,5 @@ useSeoMeta({
 
 useHead({
   link: [{ rel: "canonical", href: `${frontendUrl}${currentPath}` }],
-});
-
-onMounted(() => {
-  console.log("Home data:", data);
 });
 </script>

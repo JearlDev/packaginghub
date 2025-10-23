@@ -7,16 +7,21 @@
 import { useRuntimeConfig } from "#app";
 import { useRoute } from "vue-router";
 
+// Get page content (sections) and SEO data
 // const data = await GqlHome();
 
 // const sections = data?.about;
 const seoData = null;
 
+// Setup for SEO meta tags and canonical URL
 const config = useRuntimeConfig();
+
 const frontendUrl = config.public.FRONTEND_URL;
 const defaultMetaTitle = config.public.DEFAULT_META_TITLE;
 const defaultMetaDescription = config.public.DEFAULT_META_DESCRIPTION;
+
 const route = useRoute();
+
 const capitalizedRouteName = computed(() => {
   return route.name
     ? route.name.charAt(0).toUpperCase() + route.name.slice(1)

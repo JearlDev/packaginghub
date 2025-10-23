@@ -5,19 +5,16 @@
     </NuxtLayout>
   </div>
 </template>
+
 <script setup>
 import { useRuntimeConfig } from "#app";
 
+// Set default SEO meta tags and favicon site-wide
 const config = useRuntimeConfig();
-const frontendUrl = config.public.FRONTEND_URL;
 const backendUrl = config.public.BACKEND_URL;
 
 const data = await GqlSeo();
 const seoData = data.global.defaultSeo;
-
-onMounted(() => {
-  console.log("SEO data:", seoData);
-});
 
 useSeoMeta({
   ogImage:

@@ -21,8 +21,4 @@
 
 <script setup>
 const data = await GqlGlobal();
-
-onMounted(() => {
-  console.log("Global data:", data);
-});
 </script>
