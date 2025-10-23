@@ -2,14 +2,7 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  app: {
-    head: {
-      link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        { rel: "icon", type: "image/png", href: "/favicon.png" },
-      ],
-    },
-  },
+  app: {},
   css: ["~/assets/css/main.css"],
   googleFonts: {
     families: {
@@ -44,6 +37,13 @@ export default defineNuxtConfig({
       BACKEND_URL: process.env.NUXT_BACKEND_URL || "http://localhost:1337",
       FRONTEND_URL:
         process.env.NUXT_SITE_URL || "https://site-packaginghub.netlify.app/",
+      SITE_NAME: process.env.NUXT_SITE_NAME || "Packaging Hub",
+      DEFAULT_META_TITLE:
+        process.env.NUXT_DEFAULT_META_TITLE ||
+        "Packaging Hub | Your partners in packaging",
+      DEFAULT_META_DESCRIPTION:
+        process.env.NUXT_DEFAULT_META_DESCRIPTION ||
+        "Welcome to Packaging Hub. Your partners in packaging.",
     },
   },
 });

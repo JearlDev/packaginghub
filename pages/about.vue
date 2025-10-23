@@ -4,25 +4,41 @@
   </div>
 </template>
 <script setup>
-// import { onMounted } from "vue";
 import { useRuntimeConfig } from "#app";
 import { useRoute } from "vue-router";
 
+// const data = await GqlHome();
+
+// const sections = data?.about;
+const seoData = null;
+
 const config = useRuntimeConfig();
 const frontendUrl = config.public.FRONTEND_URL;
+const defaultMetaTitle = config.public.DEFAULT_META_TITLE;
+const defaultMetaDescription = config.public.DEFAULT_META_DESCRIPTION;
 const route = useRoute();
+const capitalizedRouteName = computed(() => {
+  return route.name
+    ? route.name.charAt(0).toUpperCase() + route.name.slice(1)
+    : "";
+});
 
 const currentPath = route.path === "/" ? "" : route.path;
+
+useSeoMeta({
+  title:
+    seoData?.metaTitle || `${capitalizedRouteName.value} | ${defaultMetaTitle}`,
+  description: seoData?.metaDescription || defaultMetaDescription,
+  ogTitle:
+    seoData?.metaTitle || `${capitalizedRouteName.value} | ${defaultMetaTitle}`,
+  ogDescription: seoData?.metaDescription || defaultMetaDescription,
+  ogUrl: `${frontendUrl}${currentPath}`,
+  twitterTitle:
+    seoData?.metaTitle || `${capitalizedRouteName.value} | ${defaultMetaTitle}`,
+  twitterDescription: seoData?.metaDescription || defaultMetaDescription,
+});
 
 useHead({
   link: [{ rel: "canonical", href: `${frontendUrl}${currentPath}` }],
 });
-
-// const data = await GqlHome();
-
-// const sections = data.home;
-
-// onMounted(() => {
-//   console.log("Home data:", data);
-// });
 </script>

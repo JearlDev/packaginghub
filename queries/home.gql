@@ -1,5 +1,9 @@
 query home {
   home {
+    pageSEO {
+      metaDescription
+      metaTitle
+    }
     hero {
       description
       heading

@@ -1,5 +1,9 @@
 query seo {
   global {
+    siteName
+    favicon {
+      url
+    }
     defaultSeo {
       metaDescription
       metaTitle
