@@ -31,7 +31,9 @@ const route = useRoute();
 
 const currentPath = route.path === "/" ? "" : route.path;
 
+// TODO: un no index page when its added
 useHead({
+  meta: [{ name: "robots", content: "noindex, nofollow" }],
   link: [{ rel: "canonical", href: `${frontendUrl}${currentPath}` }],
 });
 
