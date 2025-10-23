@@ -1,20 +1,10 @@
-query Global {
+query global {
   global {
     siteName
     siteDescription
     siteLogo {
       alternativeText
       url
-    }
-    favicon {
-      url
-    }
-    defaultSeo {
-      metaDescription
-      metaTitle
-      shareImage {
-        url
-      }
     }
     address
     companyEmail

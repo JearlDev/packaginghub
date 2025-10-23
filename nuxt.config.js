@@ -17,16 +17,29 @@ export default defineNuxtConfig({
       "Open Sans": [200, 300, 400, 500, 600, 700, 800, 900],
     },
   },
+  // TODO: update fallback for prod
+  sitemap: {
+    url: process.env.NUXT_SITE_URL || "https://site-packaginghub.netlify.app/",
+    name: process.env.NUXT_SITE_NAME || "Packaging Hub",
+  },
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["nuxt-graphql-client", "@nuxtjs/google-fonts"],
+  modules: [
+    "nuxt-graphql-client",
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
+  ],
   vite: {
     plugins: [tailwindcss()],
   },
   runtimeConfig: {
     public: {
-      GQL_HOST: process.env.GQL_HOST || "http://localhost:1337/graphql",
-      BACKEND_URL: process.env.BACKEND_URL || "http://localhost:1337",
+      // TODO: Update fallbacks for production after go live
+      GQL_HOST: process.env.NUXT_GQL_HOST || "http://localhost:1337/graphql",
+      BACKEND_URL: process.env.NUXT_BACKEND_URL || "http://localhost:1337",
+      FRONTEND_URL:
+        process.env.NUXT_SITE_URL || "https://site-packaginghub.netlify.app/",
     },
   },
 });

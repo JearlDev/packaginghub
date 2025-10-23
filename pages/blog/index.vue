@@ -22,5 +22,18 @@
   </div>
 </template>
 <script setup>
+import { useRuntimeConfig } from "#app";
+import { useRoute } from "vue-router";
+
+const config = useRuntimeConfig();
+const frontendUrl = config.public.FRONTEND_URL;
+const route = useRoute();
+
+const currentPath = route.path === "/" ? "" : route.path;
+
+useHead({
+  link: [{ rel: "canonical", href: `${frontendUrl}${currentPath}` }],
+});
+
 const data = await GqlArticles();
 </script>
