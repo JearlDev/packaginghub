@@ -26,7 +26,7 @@
         height="530"
         fetchpriority="high"
         alt="Packaging Hub"
-        class="hidden md:block absolute rotate-[-33deg] md:rotate-[-10deg] lg:rotate-[unset] -right-16 top-20 md:top-7 lg:top-10 xl:top-0 md:right-0 h-[36vw] md:h-[25vw] object-contain"
+        class="hidden md:block absolute rotate-[-33deg] md:rotate-[-10deg] lg:rotate-[unset] -right-16 top-20 md:top-7 lg:top-10 xl:top-0 md:right-0 w-auto h-[36vw] md:h-[25vw] object-contain"
       />
     </div>
   </section>
