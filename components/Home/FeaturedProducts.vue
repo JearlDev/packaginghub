@@ -21,6 +21,9 @@
             v-if="featuredProduct?.image"
             class="w-full max-h-56 object-contain"
             :src="getImageUrl(featuredProduct.image.url)"
+            loading="lazy"
+            width="433"
+            height="224"
             :alt="
               featuredProduct.image.alternativeText || 'Packaging Hub product'
             "
@@ -42,7 +45,7 @@
   </section>
 </template>
 <script setup>
-const { getImageUrl } = useImage();
+const { getImageUrl } = useImageUrl();
 
 const props = defineProps({
   data: {

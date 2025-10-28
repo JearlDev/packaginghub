@@ -23,7 +23,7 @@
   </section>
 </template>
 <script setup>
-const { getImageUrl } = useImage();
+const { getImageUrl } = useImageUrl();
 
 const props = defineProps({
   data: {

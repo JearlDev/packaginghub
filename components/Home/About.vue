@@ -4,6 +4,8 @@
       <img
         v-if="data?.image"
         class="absolute top-0 right-0 md:relative h-72 md:h-[450px] w-full object-cover md:rounded-lg col-span-4 md:col-span-2 md:order-1"
+        width="712"
+        height="450"
         :src="getImageUrl(data.image.url)"
         :alt="data.image.alternativeText || 'Packaging Hub About Us Image'"
       />
@@ -46,7 +48,7 @@
   </section>
 </template>
 <script setup>
-const { getImageUrl } = useImage();
+const { getImageUrl } = useImageUrl();
 
 const props = defineProps({
   data: {

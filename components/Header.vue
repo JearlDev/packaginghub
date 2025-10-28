@@ -9,13 +9,23 @@
         <ul class="container flex justify-start gap-5 text-sm">
           <li v-if="phone">
             <a :href="`tel:${phone}`" class="flex gap-2 items-center"
-              ><img src="/icons/phone.svg" alt="phone icon" />
+              ><img
+                src="/icons/phone.svg"
+                width="19"
+                height="19"
+                alt="phone icon"
+              />
               <span>{{ phone }}</span></a
             >
           </li>
           <li v-if="email">
             <a :href="`mailto:${email}`" class="flex gap-2 items-center"
-              ><img src="/icons/email.svg" alt="email icon" />
+              ><img
+                src="/icons/email.svg"
+                width="19"
+                height="19"
+                alt="email icon"
+              />
               <span>{{ email }}</span></a
             >
           </li>
@@ -32,6 +42,8 @@
               :class="`${
                 isScrolled ? 'h-20' : 'h-24'
               } object-contain transition-all duration-300 ease-out`"
+              width="53"
+              height="96"
               :src="getImageUrl(logo?.url) || '/images/logo.png'"
               :alt="logo?.alternativeText || 'Packaging Hub logo'"
             />
@@ -110,7 +122,7 @@
 </template>
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
-const { getImageUrl } = useImage();
+const { getImageUrl } = useImageUrl();
 
 const props = defineProps({
   logo: {

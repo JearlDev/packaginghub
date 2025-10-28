@@ -17,8 +17,8 @@ query home {
       heading
       description
       image {
-        alternativeText
         url
+        alternativeText
       }
       cta {
         link

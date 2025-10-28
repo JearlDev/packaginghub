@@ -55,6 +55,7 @@
                     ><img
                       height="32"
                       width="32"
+                      loading="lazy"
                       src="/icons/instagram.svg"
                       alt="instagram icon"
                   /></a>
@@ -65,6 +66,7 @@
                     ><img
                       height="32"
                       width="32"
+                      loading="lazy"
                       src="/icons/facebook.svg"
                       alt="facebook icon"
                   /></a>
@@ -75,6 +77,7 @@
                     ><img
                       height="32"
                       width="32"
+                      loading="lazy"
                       src="/icons/whatsapp.svg"
                       alt="whatsapp icon"
                   /></a>
@@ -85,6 +88,7 @@
                     ><img
                       height="32"
                       width="32"
+                      loading="lazy"
                       src="/icons/linkedin.svg"
                       alt="linkedin icon"
                   /></a>
@@ -95,6 +99,7 @@
                     ><img
                       height="31"
                       width="31"
+                      loading="lazy"
                       src="/icons/tiktok.svg"
                       alt="tiktok icon"
                   /></a>
@@ -105,6 +110,7 @@
                     ><img
                       height="31"
                       width="31"
+                      loading="lazy"
                       src="/icons/x.svg"
                       alt="x icon"
                   /></a>
@@ -115,6 +121,7 @@
                     ><img
                       height="32"
                       width="42"
+                      loading="lazy"
                       src="/icons/youtube.svg"
                       alt="youtube icon"
                   /></a>
