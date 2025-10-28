@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main role="main">
     <h1>{{ article.title }}</h1>
-  </div>
+  </main>
 </template>
 <script setup>
 import { onMounted } from "vue";

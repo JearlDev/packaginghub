@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main role="main">
     <h1>Contact page coming soon...</h1>
-  </div>
+  </main>
 </template>
 <script setup>
 import { useRuntimeConfig } from "#app";

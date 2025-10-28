@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header role="banner">
     <div
       :class="`fixed top-0 left-0 w-full z-[2] ${
         isScrolled ? '-translate-y-[36px]' : 'translate-y-0'
@@ -51,6 +51,7 @@
           <div class="flex items-center gap-5 lg:gap-10">
             <!-- Mobile Menu Button -->
             <button
+              aria-label="Toggle menu"
               class="lg:hidden relative w-9 h-9 flex items-center justify-center"
               @click="toggleMenu"
             >
@@ -69,7 +70,11 @@
                 ></span>
               </div>
             </button>
-            <nav v-if="mainMenu?.length" class="hidden lg:block h6">
+            <nav
+              role="navigation"
+              v-if="mainMenu?.length"
+              class="hidden lg:block h6"
+            >
               <ul class="flex items-center gap-5 font-medium">
                 <li v-for="(item, index) in mainMenu" :key="index">
                   <a

@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer role="contentinfo">
     <div class="py-12 lg:py-20 bg-secondary dark-bg">
       <div class="container">
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">

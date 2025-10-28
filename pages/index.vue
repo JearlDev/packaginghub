@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <main role="main">
     <HomeHero :data="sections?.hero" />
     <HomeAbout :data="sections?.about" />
     <HomeFeaturedProducts :data="sections?.featuredProducts" />
     <HomeBanner :data="sections?.banner" />
-  </div>
+  </main>
 </template>
 <script setup>
 import { useRuntimeConfig } from "#app";

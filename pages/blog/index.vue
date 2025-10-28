@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main role="main">
     <h1>Blogs page</h1>
 
     <div class="grid lg:grid-cols-3 gap-7">
@@ -19,7 +19,7 @@
         >
       </div>
     </div>
-  </div>
+  </main>
 </template>
 <script setup>
 import { useRuntimeConfig } from "#app";
