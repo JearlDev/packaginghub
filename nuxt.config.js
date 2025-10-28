@@ -9,6 +9,10 @@ export default defineNuxtConfig({
       Montserrat: [200, 300, 400, 500, 600, 700, 800, 900],
       "Open Sans": [200, 300, 400, 500, 600, 700, 800, 900],
     },
+    preload: true,
+    prefetch: true,
+    preconnect: true,
+    fontDisplay: "swap",
   },
   // TODO: update fallback for prod
   sitemap: {
