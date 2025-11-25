@@ -1,0 +1,8 @@
+query contact {
+  contact {
+    pageSEO {
+      metaTitle
+      metaDescription
+    }
+  }
+}

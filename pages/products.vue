@@ -1,29 +1,24 @@
 <template>
   <main role="main">
-    <section class="py-12 lg:py-20 overflow-hidden">
-      <div class="container">
-        <div class="max-w-[700px] mx-auto text-center">
-          <h1><span class="text-accent">Contact </span>Us</h1>
-        </div>
-      </div>
-    </section>
-
-    <ContactFormAndMap />
+    <ProductsListing :data="sections?.featuredProducts" />
+    <HomeBanner :data="sections?.banner" />
   </main>
 </template>
 <script setup>
 import { useRuntimeConfig } from "#app";
+import { onMounted } from "vue";
 import { useRoute } from "vue-router";
 
-definePageMeta({
-  layout: "contact", // e.g., 'custom'
-});
 // Get page content (sections) and SEO data
-const data = await GqlContact();
-const globalData = await GqlGlobal();
+const data = await GqlProducts();
+const dataSections = await GqlHome();
 
-// const sections = data?.about;
-const seoData = data?.contact?.pageSEO;
+onMounted(() => {
+  console.log("Products data:", data);
+});
+
+const sections = dataSections?.home;
+const seoData = data?.productListing?.pageSEO;
 
 // Setup for SEO meta tags and canonical URL
 const config = useRuntimeConfig();

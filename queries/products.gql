@@ -1,0 +1,8 @@
+query products {
+  productListing {
+    pageSEO {
+      metaDescription
+      metaTitle
+    }
+  }
+}

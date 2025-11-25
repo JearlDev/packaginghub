@@ -1,6 +1,76 @@
 <template>
   <main role="main">
-    <h1>About page coming soon...</h1>
+    <section class="py-12 lg:py-20 overflow-hidden">
+      <div class="container">
+        <div class="max-w-[700px] mx-auto text-center">
+          <h1><span class="text-accent">About </span>Us</h1>
+        </div>
+      </div>
+    </section>
+    <AboutIntro :data="sections?.about" />
+    <section
+      class="bg-cover bg-no-repeat bg-center"
+      :style="{
+        backgroundImage: `url('/images/custom-bg.webp')`,
+      }"
+    >
+      <div class="py-12 lg:py-20 bg-white/90">
+        <div class="container">
+          <div class="max-w-[700px] mx-auto text-center">
+            <h2>Since 2014</h2>
+            <p>
+              Packaging Hub is a dedicated team who believe is offering the best
+              customer service to our clients. In the many years of operation
+              our staff compliment has hardly changed, showing the loyalty and
+              dedication among our people, representing the ethos of our Company
+              which spills through to the service we give our customers on a
+              daily basis.
+            </p>
+            <div class="pt-7">
+              <a href="/contact" class="btn btn-primary"> Get in Touch </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 lg:py-20 bg-white/90">
+      <div class="container">
+        <div class="mx-auto text-center">
+          <h2>Why Choose Us</h2>
+          <div class="grid md:grid-cols-2 gap-7 md:gap-20 pt-4">
+            <div class="flex flex-col items-center max-w-md mx-auto">
+              <img
+                src="/icons/trophy.svg"
+                width="96"
+                height="96"
+                class="py-2"
+                alt="trophy icon"
+              />
+              <h5>A Wealth of Experience</h5>
+              <p>
+                Packaging Hub has a collective wealth of experience. We deal
+                with many of the large corporates as well as smaller business.
+              </p>
+            </div>
+            <div class="flex flex-col items-center max-w-md mx-auto">
+              <img
+                src="/icons/gift.svg"
+                width="96"
+                height="96"
+                class="py-2"
+                alt="gift icon"
+              />
+              <h5>Custom Everything</h5>
+              <p>
+                We are not set on doing standard print runs so we can
+                manufacture anything (within reason) that you would like to
+                create in print form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 <script setup>
@@ -8,10 +78,10 @@ import { useRuntimeConfig } from "#app";
 import { useRoute } from "vue-router";
 
 // Get page content (sections) and SEO data
-// const data = await GqlHome();
+const data = await GqlAbout();
 
-// const sections = data?.about;
-const seoData = null;
+const sections = data?.about;
+const seoData = data?.pageSEO;
 
 // Setup for SEO meta tags and canonical URL
 const config = useRuntimeConfig();

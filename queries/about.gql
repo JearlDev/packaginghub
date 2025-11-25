@@ -1,0 +1,21 @@
+query about {
+  about {
+    pageSEO {
+      metaDescription
+      metaTitle
+    }
+    about {
+      cta {
+        link
+        openInNewTab
+        text
+      }
+      description
+      heading
+      image {
+        alternativeText
+        url
+      }
+    }
+  }
+}

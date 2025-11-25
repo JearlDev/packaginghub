@@ -1,11 +1,11 @@
 <template>
   <header role="banner">
     <div
-      :class="`fixed top-0 left-0 w-full z-[2] ${
+      :class="`fixed top-0 left-0 w-full z-[4] ${
         isScrolled ? '-translate-y-[36px]' : 'translate-y-0'
       } transition-all duration-300 ease-out`"
     >
-      <div class="bg-accent text-white py-2 relative z-[3]">
+      <div class="bg-accent text-white py-2 relative z-[5]">
         <ul class="container flex justify-start gap-5 text-sm">
           <li v-if="phone">
             <a :href="`tel:${phone}`" class="flex gap-2 items-center"
@@ -34,7 +34,7 @@
       <div
         :class="`${
           isScrolled ? 'h-28' : 'h-32'
-        } border-b border-secondary/20 bg-white relative z-[3] transition-all duration-300 ease-out`"
+        } border-b border-secondary/20 bg-white relative z-[5] transition-all duration-300 ease-out`"
       >
         <div class="h-full container flex items-center justify-between">
           <a href="/">
@@ -94,7 +94,7 @@
       <!-- Mobile Menu -->
       <div
         v-if="mainMenu?.length"
-        class="lg:hidden bg-white shadow-md absolute z-[2] w-full left-0 right-0 duration-300 transition-all"
+        class="lg:hidden bg-white shadow-md absolute z-[4] w-full left-0 right-0 duration-300 transition-all"
         :class="{
           'max-h-96 opacity-100': menuOpen,
           'max-h-0 opacity-0 overflow-hidden': !menuOpen,
