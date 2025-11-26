@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 lg:py-20 bg-secondary/5 dark-bg relative">
+  <section class="py-12 lg:py-20 bg-secondary/10 dark-bg relative">
     <div class="container">
       <div class="grid lg:grid-cols-2 gap-10">
         <!-- Contact Form -->

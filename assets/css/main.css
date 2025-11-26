@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-primary: "Montserrat", "sans-serif";
-  --font-secondary: "Open Sans", "sans-serif";
+  --font-primary: "Montserrat", "Arial", "Helvetica", "sans-serif";
+  --font-secondary: "Open Sans", "Arial", "Helvetica", "sans-serif";
   --color-primary: #4b535d;
   --color-secondary: #747d88;
   --color-accent: #c0d848;
@@ -126,4 +126,112 @@ a:hover:not(a.btn, nav a) {
 }
 .btn-tertiary {
   @apply bg-transparent text-secondary px-6 py-3 rounded-full hover:text-secondary/80;
+}
+
+/* Base animation properties */
+.hidden-el {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease-out, -webkit-transform 0.8s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.hidden-el.show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* fade image animation */
+.fade-img,
+.fade-img-two,
+.fade-img-three,
+.fade-img-four {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+  -webkit-transition: opacity 0.8s ease-out;
+}
+.fade-img.show,
+.fade-img-two.show,
+.fade-img-three.show,
+.fade-img-four.show {
+  opacity: 1;
+}
+/* end fade image animation */
+
+/* Generate delays for both fade-ani and fade-ani-above-fold */
+.fade-ani .hidden-el:nth-child(1),
+.fade-ani-above-fold .hidden-el:nth-child(1),
+.fade-ani-above-fold-two .hidden-el:nth-child(1),
+.fade-ani-above-fold-three .hidden-el:nth-child(1) {
+  transition-delay: 0ms;
+}
+.fade-ani .hidden-el:nth-child(2),
+.fade-ani-above-fold .hidden-el:nth-child(2),
+.fade-ani-above-fold-two .hidden-el:nth-child(2),
+.fade-ani-above-fold-three .hidden-el:nth-child(2) {
+  transition-delay: 200ms;
+}
+.fade-ani .hidden-el:nth-child(3),
+.fade-ani-above-fold .hidden-el:nth-child(3),
+.fade-ani-above-fold-two .hidden-el:nth-child(3),
+.fade-ani-above-fold-three .hidden-el:nth-child(3) {
+  transition-delay: 400ms;
+}
+.fade-ani .hidden-el:nth-child(4),
+.fade-ani-above-fold .hidden-el:nth-child(4),
+.fade-ani-above-fold-two .hidden-el:nth-child(4),
+.fade-ani-above-fold-three .hidden-el:nth-child(4) {
+  transition-delay: 600ms;
+}
+.fade-ani .hidden-el:nth-child(5),
+.fade-ani-above-fold .hidden-el:nth-child(5),
+.fade-ani-above-fold-two .hidden-el:nth-child(5),
+.fade-ani-above-fold-three .hidden-el:nth-child(5) {
+  transition-delay: 800ms;
+}
+.fade-ani .hidden-el:nth-child(6),
+.fade-ani-above-fold .hidden-el:nth-child(6),
+.fade-ani-above-fold-two .hidden-el:nth-child(6),
+.fade-ani-above-fold-three .hidden-el:nth-child(6) {
+  transition-delay: 1000ms;
+}
+
+/* Specific delays for above-fold sections */
+.fade-ani-above-fold:nth-of-type(2) .hidden-el:nth-child(1),
+.fade-ani-above-fold-two:nth-of-type(2) .hidden-el:nth-child(1),
+.fade-ani-above-fold-three:nth-of-type(2) .hidden-el:nth-child(1) {
+  transition-delay: 200ms;
+}
+.fade-ani-above-fold:nth-of-type(2) .hidden-el:nth-child(2),
+.fade-ani-above-fold-two:nth-of-type(2) .hidden-el:nth-child(2),
+.fade-ani-above-fold-three:nth-of-type(2) .hidden-el:nth-child(2) {
+  transition-delay: 400ms;
+}
+.fade-ani-above-fold:nth-of-type(2) .hidden-el:nth-child(3),
+.fade-ani-above-fold-two:nth-of-type(2) .hidden-el:nth-child(3),
+.fade-ani-above-fold-three:nth-of-type(2) .hidden-el:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.fade-ani-above-fold:nth-of-type(3) .hidden-el:nth-child(1),
+.fade-ani-above-fold-two:nth-of-type(3) .hidden-el:nth-child(1),
+.fade-ani-above-fold-three:nth-of-type(3) .hidden-el:nth-child(1) {
+  transition-delay: 600ms;
+}
+.fade-ani-above-fold:nth-of-type(3) .hidden-el:nth-child(2),
+.fade-ani-above-fold-two:nth-of-type(3) .hidden-el:nth-child(2),
+.fade-ani-above-fold-three:nth-of-type(3) .hidden-el:nth-child(2) {
+  transition-delay: 800ms;
+}
+.fade-ani-above-fold:nth-of-type(3) .hidden-el:nth-child(3),
+.fade-ani-above-fold-two:nth-of-type(3) .hidden-el:nth-child(3),
+.fade-ani-above-fold-three:nth-of-type(3) .hidden-el:nth-child(3) {
+  transition-delay: 1000ms;
+}
+.fade-ani-above-fold:nth-of-type(3) .hidden-el:nth-child(4),
+.fade-ani-above-fold-two:nth-of-type(3) .hidden-el:nth-child(4),
+.fade-ani-above-fold-three:nth-of-type(3) .hidden-el:nth-child(4) {
+  transition-delay: 1200ms;
 }

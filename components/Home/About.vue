@@ -3,7 +3,7 @@
     <div class="container grid grid-cols-4 gap-7 md:gap-14 items-center">
       <img
         v-if="data?.image"
-        class="absolute top-0 right-0 md:relative h-72 md:h-[450px] w-full object-cover md:rounded-lg col-span-4 md:col-span-2 md:order-1"
+        class="absolute top-0 right-0 md:relative h-72 md:h-[450px] w-full object-cover md:rounded-lg col-span-4 md:col-span-2 md:order-1 fade-img-four"
         width="712"
         height="450"
         :src="getImageUrl(data.image.url)"
@@ -16,17 +16,19 @@
           alt="packaginghub packaging"
         /> -->
       <div class="col-span-4 md:col-span-2 md:order-2">
-        <div class="max-w-[700px]">
-          <h2 v-if="data?.heading">
+        <div class="max-w-[700px] fade-ani">
+          <h2 v-if="data?.heading" class="hidden-el">
             {{ data.heading }}
           </h2>
-          <ElementsRichText
-            v-if="data?.description"
-            :content="data.description"
-          />
+          <div class="hidden-el">
+            <ElementsRichText
+              v-if="data?.description"
+              :content="data.description"
+            />
+          </div>
           <div
             v-if="data?.cta[0]"
-            class="pt-7 flex flex-col lg:flex-row gap-2 justify-start"
+            class="pt-7 flex flex-col lg:flex-row gap-2 justify-start hidden-el"
           >
             <a
               :href="data.cta[0].link"

@@ -2,8 +2,8 @@
   <main role="main">
     <section class="py-12 lg:py-20 overflow-hidden">
       <div class="container">
-        <div class="max-w-[700px] mx-auto text-center">
-          <h1><span class="text-accent">Contact </span>Us</h1>
+        <div class="max-w-[700px] mx-auto text-center fade-ani-above-fold">
+          <h1 class="hidden-el"><span class="text-accent">Contact </span>Us</h1>
         </div>
       </div>
     </section>

@@ -2,8 +2,8 @@
   <main role="main">
     <section class="py-12 lg:py-20 overflow-hidden">
       <div class="container">
-        <div class="max-w-[700px] mx-auto text-center">
-          <h1><span class="text-accent">About </span>Us</h1>
+        <div class="max-w-[700px] mx-auto text-center fade-ani-above-fold">
+          <h1 class="hidden-el"><span class="text-accent">About </span>Us</h1>
         </div>
       </div>
     </section>
@@ -16,9 +16,9 @@
     >
       <div class="py-12 lg:py-20 bg-white/90">
         <div class="container">
-          <div class="max-w-[700px] mx-auto text-center">
-            <h2>Since 2014</h2>
-            <p>
+          <div class="max-w-[700px] mx-auto text-center fade-ani">
+            <h2 class="hidden-el">Since 2014</h2>
+            <p class="hidden-el">
               Packaging Hub is a dedicated team who believe is offering the best
               customer service to our clients. In the many years of operation
               our staff compliment has hardly changed, showing the loyalty and
@@ -26,7 +26,7 @@
               which spills through to the service we give our customers on a
               daily basis.
             </p>
-            <div class="pt-7">
+            <div class="pt-7 hidden-el">
               <a href="/contact" class="btn btn-primary"> Get in Touch </a>
             </div>
           </div>
@@ -36,9 +36,9 @@
     <section class="py-12 lg:py-20 bg-white/90">
       <div class="container">
         <div class="mx-auto text-center">
-          <h2>Why Choose Us</h2>
-          <div class="grid md:grid-cols-2 gap-7 md:gap-20 pt-4">
-            <div class="flex flex-col items-center max-w-md mx-auto">
+          <div class="fade-ani"><h2 class="hidden-el">Why Choose Us</h2></div>
+          <div class="grid md:grid-cols-2 gap-7 md:gap-20 pt-4 fade-ani">
+            <div class="flex flex-col items-center max-w-md mx-auto hidden-el">
               <img
                 src="/icons/trophy.svg"
                 width="96"
@@ -52,7 +52,7 @@
                 with many of the large corporates as well as smaller business.
               </p>
             </div>
-            <div class="flex flex-col items-center max-w-md mx-auto">
+            <div class="flex flex-col items-center max-w-md mx-auto hidden-el">
               <img
                 src="/icons/gift.svg"
                 width="96"
