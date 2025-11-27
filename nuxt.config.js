@@ -33,7 +33,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       // TODO: Update fallbacks for production after go live
-      GQL_HOST: process.env.NUXT_GQL_HOST || "http://localhost:1337/graphql",
+      //TODO: Re-add GQL_HOST and BACKEND_URL when CMS is ready
+      // GQL_HOST: process.env.NUXT_GQL_HOST || "http://localhost:1337/graphql",
       BACKEND_URL: process.env.NUXT_BACKEND_URL || "http://localhost:1337",
       FRONTEND_URL:
         process.env.NUXT_SITE_URL || "https://site-packaginghub.netlify.app/",

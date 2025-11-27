@@ -20,9 +20,13 @@ const data = seoData.data;
 
 useSeoMeta({
   ogImage:
-    `${backendUrl}${seoData?.shareImage?.url}` || "/images/social-preview.jpg",
+    //TODO: Re-add GraphQL query when CMS is ready
+    // `${backendUrl}${seoData?.shareImage?.url}` || "/images/social-preview.jpg",
+    "/uploads/packaging_hub_share_image_56a498a542.png",
   twitterImage:
-    `${backendUrl}${seoData?.shareImage?.url}` || "/images/social-preview.jpg",
+    //TODO: Re-add GraphQL query when CMS is ready
+    // `${backendUrl}${seoData?.shareImage?.url}` || "/images/social-preview.jpg",
+    "/uploads/packaging_hub_share_image_56a498a542.png",
   twitterCard: "summary",
 });
 
@@ -34,7 +38,9 @@ useHead({
     {
       rel: "icon",
       type: "image/png",
-      href: `${backendUrl}${data.global?.favicon?.url}` || "/favicon.ico",
+      //TODO: Re-add GraphQL query when CMS is ready
+      // href: `${backendUrl}${data.global?.favicon?.url}` || "/favicon.ico",
+      href: "/favicon.ico",
     },
   ],
 });
