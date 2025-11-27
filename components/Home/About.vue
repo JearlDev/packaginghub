@@ -3,7 +3,7 @@
     <div class="container grid grid-cols-4 gap-7 md:gap-14 items-center">
       <img
         v-if="data?.image"
-        class="absolute top-0 right-0 md:relative h-72 md:h-[450px] w-full object-cover md:rounded-lg col-span-4 md:col-span-2 md:order-1 fade-img-four"
+        class="absolute top-0 right-0 md:relative h-72 md:h-[450px] w-full object-cover md:rounded-lg col-span-4 md:col-span-2 md:order-1"
         width="712"
         height="450"
         :src="getImageUrl(data.image.url)"
