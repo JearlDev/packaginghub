@@ -1,6 +1,6 @@
 <template>
   <main role="main">
-    <h1>{{ article.title }}</h1>
+    <!-- <h1>{{ article.title }}</h1> -->
   </main>
 </template>
 <script setup>
@@ -27,9 +27,9 @@ const slug = route.path.replace("/blog/", "");
 //   console.log("Route query:", data);
 // });
 
-const data = await GqlArticleSingle({
-  slug: slug,
-});
+// const data = await GqlArticleSingle({
+//   slug: slug,
+// });
 
-const article = data.articles[0];
+// const article = data.articles[0];
 </script>

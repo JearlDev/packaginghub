@@ -1,0 +1,121 @@
+{
+  "data": {
+    "global": {
+      "siteName": "Packaging Hub",
+      "siteDescription": "Welcome to Packaging Hub. Your partners in packaging.",
+      "siteLogo": {
+        "alternativeText": "Packaging Hub Logo",
+        "url": "/uploads/logo_a07c624e25.png"
+      },
+      "address": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Unit 5 Henton Park,"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "25 Stella Road,"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Montague Gardens."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Cape Town"
+            }
+          ]
+        }
+      ],
+      "companyEmail": "kevin@packhub.co.za",
+      "companyPhoneNumber": "+27215553879",
+      "officeHours": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "M-T: 8am – 4.30pm"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Friday: 8am – 3pm"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "S-S: Closed"
+            }
+          ]
+        }
+      ],
+      "mainCTA": {
+        "link": "/contact",
+        "openInNewTab": null,
+        "text": "Get in touch"
+      },
+      "mainMenu": [
+        {
+          "id": "120",
+          "link": "/",
+          "openInNewTab": null,
+          "text": "Home"
+        },
+        {
+          "id": "122",
+          "link": "/products",
+          "openInNewTab": null,
+          "text": "Products"
+        },
+        {
+          "id": "121",
+          "link": "/about",
+          "openInNewTab": null,
+          "text": "About"
+        },
+        {
+          "id": "123",
+          "link": "/contact",
+          "openInNewTab": null,
+          "text": "Contact"
+        }
+      ],
+      "socials": {
+        "facebookLink": "#",
+        "instagramLink": "#",
+        "linkedinLink": null,
+        "tiktokLink": null,
+        "twitterLink": null,
+        "youtubeLink": null,
+        "whatsappLink": null
+      }
+    }
+  }
+}

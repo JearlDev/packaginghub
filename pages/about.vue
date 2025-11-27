@@ -78,7 +78,10 @@ import { useRuntimeConfig } from "#app";
 import { useRoute } from "vue-router";
 
 // Get page content (sections) and SEO data
-const data = await GqlAbout();
+//TODO: Re-add GraphQL query when CMS is ready
+// const data = await GqlAbout();
+import aboutData from "~/content/about.json";
+const data = aboutData.data;
 
 const sections = data?.about;
 const seoData = data?.pageSEO;

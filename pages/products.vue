@@ -10,12 +10,13 @@ import { onMounted } from "vue";
 import { useRoute } from "vue-router";
 
 // Get page content (sections) and SEO data
-const data = await GqlProducts();
-const dataSections = await GqlHome();
-
-onMounted(() => {
-  console.log("Products data:", data);
-});
+//TODO: Re-add GraphQL query when CMS is ready
+// const data = await GqlProducts();
+// const dataSections = await GqlHome();
+import productsData from "~/content/products.json";
+import homeData from "~/content/home.json";
+const data = productsData.data;
+const dataSections = homeData.data;
 
 const sections = dataSections?.home;
 const seoData = data?.productListing?.pageSEO;

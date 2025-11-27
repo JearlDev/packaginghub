@@ -80,6 +80,9 @@
                   <a
                     :href="item.link"
                     class="text-secondary hover:text-accent transition-colors"
+                    :class="{
+                      '!text-accent': route.path === item.link,
+                    }"
                     >{{ item.text }}</a
                   >
                 </li>
@@ -117,7 +120,13 @@
               'border-b': index !== mainMenu.length - 1,
             }"
           >
-            <a :href="item.link">{{ item.text }}</a>
+            <a
+              :href="item.link"
+              :class="{
+                '!text-accent': route.path === item.link,
+              }"
+              >{{ item.text }}</a
+            >
           </li>
         </ul>
       </div>
@@ -127,6 +136,9 @@
 </template>
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import { useRoute } from "vue-router";
+const route = useRoute();
+
 const { getImageUrl } = useImageUrl();
 
 const props = defineProps({

@@ -20,5 +20,8 @@
 </template>
 
 <script setup>
-const data = await GqlGlobal();
+//TODO: Re-add GraphQL query when CMS is ready
+// const data = await GqlGlobal();
+import globalData from "~/content/global.json";
+const data = globalData.data;
 </script>

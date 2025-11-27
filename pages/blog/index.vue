@@ -2,7 +2,7 @@
   <main role="main">
     <h1>Blogs page</h1>
 
-    <div class="grid lg:grid-cols-3 gap-7">
+    <!-- <div class="grid lg:grid-cols-3 gap-7">
       <div
         v-for="article in data.articles"
         :key="article.documentId"
@@ -18,7 +18,7 @@
           >Read More</nuxt-link
         >
       </div>
-    </div>
+    </div> -->
   </main>
 </template>
 <script setup>
@@ -37,5 +37,5 @@ useHead({
   link: [{ rel: "canonical", href: `${frontendUrl}${currentPath}` }],
 });
 
-const data = await GqlArticles();
+// const data = await GqlArticles();
 </script>

@@ -1,0 +1,287 @@
+{
+  "data": {
+    "home": {
+      "pageSEO": {
+        "metaDescription": null,
+        "metaTitle": null
+      },
+      "hero": {
+        "description": "Welcome to Packaging Hub. Your partners in packaging.",
+        "heading": "Packaging Hub",
+        "cta": {
+          "link": "#get-in-touch",
+          "openInNewTab": false,
+          "text": "Get in touch"
+        }
+      },
+      "about": {
+        "heading": "A Dynamic print company",
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Packaging Hub is a dynamic packaging Company originally established to help small to medium-size businesses with all their packaging needs, concentrating mainly on the manufacturing of folded cartons."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We are a phone call away to help you source packaging that will give your products the shelf shout it deserves."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Feel free to call us on "
+              },
+              {
+                "type": "link",
+                "url": "tel:021 555 3879",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "021 555 3879"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " or email us "
+              },
+              {
+                "type": "link",
+                "url": "mailto:sales@pakhub.co.za",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "sales@pakhub.co.za"
+                  }
+                ]
+              },
+              {
+                "text": "",
+                "type": "text",
+                "strikethrough": true
+              }
+            ]
+          }
+        ],
+        "image": {
+          "url": "/uploads/campaign_creators_e6n7uo_En_Yb_A_unsplash_2_cb33218799.jpg",
+          "alternativeText": null
+        },
+        "cta": [
+          {
+            "link": "/about",
+            "text": "learn more",
+            "openInNewTab": null
+          }
+        ]
+      },
+      "featuredProducts": {
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "All our products are made to the highest standard ensuring that all board and inks are FDA® accredited. We also have a FSC® certification allowing our clients to print the FSC® logo on their cartons. Our licence number is FSC -C161939. This will show your customers that all board sourced for your packaging comes from sustainable forestry, meaning you are doing your bit to ensure our forests are alive for years to come."
+              }
+            ]
+          }
+        ],
+        "heading": "Featured Products",
+        "featuredProducts": [
+          {
+            "documentId": "a1dfpxmp1ix2w64egn83qfxz",
+            "description": "We mount printed sheets to fluted board to create your classic litho laminated cartons.",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/about_main_1_cfd9ec36dd.jpg",
+              "width": 453,
+              "height": 667
+            },
+            "title": "Litho Laminated Cartons",
+            "publishedAt": "2025-10-22T12:52:30.225Z"
+          },
+          {
+            "documentId": "jq2k8cd8faehdw4fz4uelqgn",
+            "description": "Available in a variety of shapes and sizes made to your specific requirements.",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/swingtags_0862_9b2242a4dc.jpg",
+              "width": 453,
+              "height": 480
+            },
+            "title": "Swing/Neck Tags",
+            "publishedAt": "2025-10-22T12:53:48.424Z"
+          },
+          {
+            "documentId": "pda4i88q6ws27kvnuqplkm70",
+            "description": "These paper bags are flexo printed and available in a variety of sizes and colours.",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/paper_bags_8703_3c2e0ef75a.jpg",
+              "width": 1067,
+              "height": 1111
+            },
+            "title": "Paper Bags",
+            "publishedAt": "2025-10-22T12:54:23.719Z"
+          },
+          {
+            "documentId": "s8degpjd85vkc2ldjhzg3eco",
+            "description": "All sleeves are manufactured to your specific needs and supplied either glued or with double-sided tape.",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/printed_sleeves_8726_813529bdcf.jpg",
+              "width": 453,
+              "height": 480
+            },
+            "title": "Printed Sleeves",
+            "publishedAt": "2025-10-22T12:57:59.586Z"
+          },
+          {
+            "documentId": "q7w05ceg0uts32wejk8v8vyk",
+            "description": "Available in a variety of sizes. Printed sheets are laminated then mounted to readymade cores.",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/wrap_cones_8715_1_90a6635a9c.jpg",
+              "width": 453,
+              "height": 480
+            },
+            "title": "Wrapped Cores",
+            "publishedAt": "2025-10-22T12:56:08.551Z"
+          },
+          {
+            "documentId": "ut3phnazwenodnagqldezq3v",
+            "description": "All food packing manufactured at Packaging Hub is manufactured using FDA accredited inks and materials. Available in all shapes and sizes.",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/retail_packs_8710_4d0246d4f6.jpg",
+              "width": 1067,
+              "height": 1111
+            },
+            "title": "Retail Food Packaging",
+            "publishedAt": "2025-10-22T12:58:26.376Z"
+          },
+          {
+            "documentId": "zavd2nnusxoyw73g7yy6ajdx",
+            "description": "Available in a variety of sizes and printed to your specifications",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/bagstyle_carry_box_8718_1e83515d1f.jpg",
+              "width": 1067,
+              "height": 1421
+            },
+            "title": "Bag Style Carry Box",
+            "publishedAt": "2025-10-22T12:55:40.831Z"
+          },
+          {
+            "documentId": "uotxjnp2zxx2c2asqxon1si8",
+            "description": "Personalise these shapes and sizes to suit your requirements.",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/folded_cartons_8703_82cf2a1a9c.jpg",
+              "width": 1067,
+              "height": 1421
+            },
+            "title": "Folded Cartons",
+            "publishedAt": "2025-10-22T12:56:53.376Z"
+          },
+          {
+            "documentId": "shdt24azhzlhtkundezf8sc9",
+            "description": "We can engineer all different shapes and sizes to suit your needs. The options are endless.",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/gift_boxes8701_941b0303f3.jpg",
+              "width": 1067,
+              "height": 1421
+            },
+            "title": "Gift Boxes",
+            "publishedAt": "2025-10-22T12:54:55.341Z"
+          },
+          {
+            "documentId": "k69yca1yihxhl4ujy7cn5zjo",
+            "description": "We manufacture these boxes with chipboard and then wrap printed sheets to the chipboard carton, giving you a strong re-usable carton. (mainly used for Gifting cartons)\n\n",
+            "cta": {
+              "link": "#get-in-touch",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/Keepsake_boxes_8707_1d863ff527.jpg",
+              "width": 1067,
+              "height": 1111
+            },
+            "title": "Keepsake Box",
+            "publishedAt": "2025-10-22T12:57:19.072Z"
+          }
+        ]
+      },
+      "banner": {
+        "image": null,
+        "heading": "Custom Designs",
+        "description": "All our products are manufactured to each client’s specific needs and designs. We will engineer cartons that fit your product and to the shape that you require. Plain samples will be supplied for your approval before going to production.",
+        "cta": {
+          "link": "#get-in-touch",
+          "openInNewTab": null,
+          "text": "Get a Quote"
+        }
+      }
+    }
+  }
+}

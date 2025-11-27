@@ -19,8 +19,10 @@ definePageMeta({
   layout: "contact", // e.g., 'custom'
 });
 // Get page content (sections) and SEO data
-const data = await GqlContact();
-const globalData = await GqlGlobal();
+// const data = await GqlContact();
+// const globalData = await GqlGlobal();
+import contactData from "~/content/contact.json";
+const data = contactData.data;
 
 // const sections = data?.about;
 const seoData = data?.contact?.pageSEO;

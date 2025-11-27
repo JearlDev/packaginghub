@@ -1,0 +1,82 @@
+{
+  "data": {
+    "about": {
+      "pageSEO": {
+        "metaDescription": null,
+        "metaTitle": null
+      },
+      "about": {
+        "cta": [
+          {
+            "link": "/contact",
+            "openInNewTab": null,
+            "text": "Get in Touch"
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Packaging Hub is a dynamic packaging Company originally established to help small to medium-size businesses with all their packaging needs, concentrating mainly on the manufacturing of folded cartons."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We are a phone call away to help you source packaging that will give your products the shelf shout it deserves."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Feel free to call us on "
+              },
+              {
+                "type": "link",
+                "url": "tel:021 555 3879",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "021 555 3879"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " or email us "
+              },
+              {
+                "type": "link",
+                "url": "mailto:sales@pakhub.co.za",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "sales@pakhub.co.za"
+                  }
+                ]
+              },
+              {
+                "text": "",
+                "type": "text",
+                "strikethrough": true
+              }
+            ]
+          }
+        ],
+        "heading": "A Dynamic print company",
+        "image": {
+          "alternativeText": null,
+          "url": "/uploads/campaign_creators_e6n7uo_En_Yb_A_unsplash_2_cb33218799.jpg"
+        }
+      }
+    }
+  }
+}

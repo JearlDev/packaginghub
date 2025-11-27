@@ -13,8 +13,10 @@ import { useRuntimeConfig } from "#app";
 const config = useRuntimeConfig();
 const backendUrl = config.public.BACKEND_URL;
 
-const data = await GqlSeo();
-const seoData = data.global.defaultSeo;
+//TODO: Re-add GraphQL query when CMS is ready
+// const data = await GqlSeo();
+import seoData from "~/content/seo.json";
+const data = seoData.data;
 
 useSeoMeta({
   ogImage:

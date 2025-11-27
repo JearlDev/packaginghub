@@ -9,9 +9,12 @@
 <script setup>
 import { useRuntimeConfig } from "#app";
 import { useRoute } from "vue-router";
+import homeData from "~/content/home.json";
 
 // Get page content (sections) and SEO data
-const data = await GqlHome();
+// TODO: Re-add GraphQL query when CMS is ready
+// const data = await GqlHome();
+const data = homeData.data;
 
 const sections = data.home;
 const seoData = data?.home?.pageSEO;

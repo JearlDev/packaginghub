@@ -1,0 +1,17 @@
+{
+  "data": {
+    "global": {
+      "siteName": "Packaging Hub",
+      "favicon": {
+        "url": "/favicon.ico"
+      },
+      "defaultSeo": {
+        "metaDescription": "Welcome to Packaging Hub. Your partners in packaging.",
+        "metaTitle": "Packaging Hub | Your partners in packaging",
+        "shareImage": {
+          "url": "/uploads/packaging_hub_share_image_56a498a542.png"
+        }
+      }
+    }
+  }
+}
