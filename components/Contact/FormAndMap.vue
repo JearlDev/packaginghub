@@ -70,7 +70,7 @@
           class="absolute top-[unset] bottom-0 lg:bottom-[unset] lg:top-0 right-0 w-full lg:w-1/2 h-80 lg:h-full"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.3705516561604!2d18.515935950909046!3d-33.85433998056533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5ecbb800e041%3A0xe53399cfbf4308bf!2s5%2C%2025%20Stella%20Rd%2C%20Montague%20Gardens%2C%20Cape%20Town%2C%207441!5e0!3m2!1sen!2sza!4v1576832545896!5m2!1sen!2sza"
+            src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=Unit%2015%20The%20Studios,%20%20Atlas%20Gardens%20Business%20Park,%20%20Contermanskloof%20Rd,%20Durbanville%20%20Cape%20Town,%207550+(Packaging%20Hub)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             width="100%"
             height="100%"
             frameborder="0"
