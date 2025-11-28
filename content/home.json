@@ -9,7 +9,7 @@
         "description": "Welcome to Packaging Hub. Your partners in packaging.",
         "heading": "Packaging Hub",
         "cta": {
-          "link": "#get-in-touch",
+          "link": "/contact",
           "openInNewTab": false,
           "text": "Get in touch"
         }
@@ -104,7 +104,7 @@
             "documentId": "a1dfpxmp1ix2w64egn83qfxz",
             "description": "We mount printed sheets to fluted board to create your classic litho laminated cartons.",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -121,7 +121,7 @@
             "documentId": "jq2k8cd8faehdw4fz4uelqgn",
             "description": "Available in a variety of shapes and sizes made to your specific requirements.",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -138,7 +138,7 @@
             "documentId": "pda4i88q6ws27kvnuqplkm70",
             "description": "These paper bags are flexo printed and available in a variety of sizes and colours.",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -155,7 +155,7 @@
             "documentId": "s8degpjd85vkc2ldjhzg3eco",
             "description": "All sleeves are manufactured to your specific needs and supplied either glued or with double-sided tape.",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -172,7 +172,7 @@
             "documentId": "q7w05ceg0uts32wejk8v8vyk",
             "description": "Available in a variety of sizes. Printed sheets are laminated then mounted to readymade cores.",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -189,7 +189,7 @@
             "documentId": "ut3phnazwenodnagqldezq3v",
             "description": "All food packing manufactured at Packaging Hub is manufactured using FDA accredited inks and materials. Available in all shapes and sizes.",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -206,7 +206,7 @@
             "documentId": "zavd2nnusxoyw73g7yy6ajdx",
             "description": "Available in a variety of sizes and printed to your specifications",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -223,7 +223,7 @@
             "documentId": "uotxjnp2zxx2c2asqxon1si8",
             "description": "Personalise these shapes and sizes to suit your requirements.",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -240,7 +240,7 @@
             "documentId": "shdt24azhzlhtkundezf8sc9",
             "description": "We can engineer all different shapes and sizes to suit your needs. The options are endless.",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -257,7 +257,7 @@
             "documentId": "k69yca1yihxhl4ujy7cn5zjo",
             "description": "We manufacture these boxes with chipboard and then wrap printed sheets to the chipboard carton, giving you a strong re-usable carton. (mainly used for Gifting cartons)\n\n",
             "cta": {
-              "link": "#get-in-touch",
+              "link": "/contact",
               "openInNewTab": null,
               "text": "Get a Quote"
             },
@@ -277,7 +277,7 @@
         "heading": "Custom Designs",
         "description": "All our products are manufactured to each client’s specific needs and designs. We will engineer cartons that fit your product and to the shape that you require. Plain samples will be supplied for your approval before going to production.",
         "cta": {
-          "link": "#get-in-touch",
+          "link": "/contact",
           "openInNewTab": null,
           "text": "Get a Quote"
         }
