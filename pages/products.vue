@@ -6,7 +6,6 @@
 </template>
 <script setup>
 import { useRuntimeConfig } from "#app";
-import { onMounted } from "vue";
 import { useRoute } from "vue-router";
 
 // Get page content (sections) and SEO data
