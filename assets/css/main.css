@@ -85,10 +85,10 @@ h6 + p,
   @apply pt-2 lg:pt-3;
 }
 
-a:not(a.btn, header a) {
+a:not(a.btn, header a, a.clickable-card) {
   @apply text-accent font-semibold;
 }
-a:hover:not(a.btn, nav a) {
+a:hover:not(a.btn, nav a, a.clickable-card) {
   @apply underline;
 }
 

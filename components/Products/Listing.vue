@@ -14,14 +14,12 @@
         v-if="data?.featuredProducts?.length"
         class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 pt-7 md:pt-10 fade-ani-above-fold-three"
       >
-        <div
+        <a :href="featuredProduct?.cta?.link || '/contact'"
           v-for="featuredProduct in data?.featuredProducts"
           :key="featuredProduct.documentId"
-          class="hidden-el"
+          class="clickable-card hidden-el"
         >
-          <div
-            class="p-5 border border-secondary/20 rounded-lg text-center hover:shadow-md hover:scale-105 transition-all duration-150 ease-out"
-          >
+          <div class="p-5 border border-secondary/20 rounded-lg text-center hover:shadow-md hover:scale-105 transition-all duration-150 ease-out">
             <img
               v-if="featuredProduct?.image"
               class="w-full max-h-56 object-contain"
@@ -36,16 +34,16 @@
             <h3 v-if="featuredProduct?.title" class="h5 pt-4 !text-accent">
               {{ featuredProduct.title }}
             </h3>
-            <p v-if="featuredProduct?.description">
+            <p v-if="featuredProduct?.description"">
               {{ featuredProduct.description }}
             </p>
             <div v-if="featuredProduct?.cta" class="pt-7 pb-3">
-              <a :href="featuredProduct.cta.link" class="btn btn-primary">{{
+              <div class="btn btn-primary">{{
                 featuredProduct.cta.text
-              }}</a>
+              }}</div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
