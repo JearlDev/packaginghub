@@ -33,6 +33,7 @@
             <a
               :href="data.cta[0].link"
               :target="data.cta[0].openInNewTab ? '_blank' : '_self'"
+              aria-label="Go to About page for more information about Packaging Hub"
               class="btn btn-secondary"
               >{{ data.cta[0].text }}</a
             >
@@ -40,7 +41,6 @@
               v-if="data?.cta[1]"
               :href="data.cta[1].link"
               :target="data.cta[1].openInNewTab ? '_blank' : '_self'"
-              aria-label="Go to About page for more information about Packaging Hub"
               class="btn btn-tertiary"
               >{{ data.cta[1].text }}</a
             >
