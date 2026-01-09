@@ -8,6 +8,7 @@
 </template>
 <script setup>
 import { useRuntimeConfig } from "#app";
+import { onMounted } from "vue";
 import { useRoute } from "vue-router";
 
 // Get page content (sections) and SEO data
@@ -17,7 +18,7 @@ import aboutData from "~/content/about.json";
 const data = aboutData.data;
 
 const sections = data?.about;
-const seoData = data?.pageSEO;
+const seoData = data?.about.pageSEO;
 
 // Setup for SEO meta tags and canonical URL
 const config = useRuntimeConfig();
