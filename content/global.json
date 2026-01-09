@@ -108,8 +108,8 @@
         }
       ],
       "socials": {
-        "facebookLink": "#",
-        "instagramLink": "#",
+        "facebookLink": null,
+        "instagramLink": "https://www.instagram.com/packaging_hub_sa/",
         "linkedinLink": null,
         "tiktokLink": null,
         "twitterLink": null,

@@ -43,5 +43,13 @@ useHead({
       href: "/favicon.ico",
     },
   ],
+  script: [
+    {
+      src: "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js",
+      type: "text/javascript",
+      body: true,
+      defer: true,
+    },
+  ],
 });
 </script>

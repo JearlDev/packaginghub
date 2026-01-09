@@ -42,6 +42,7 @@
               <a
                 v-if="socials.instagramLink"
                 :href="socials.instagramLink"
+                target="_blank"
                 class="hover:opacity-80 transition-opacity duration-150"
                 ><img
                   height="32"
@@ -53,6 +54,7 @@
               <a
                 v-if="socials.facebookLink"
                 :href="socials.facebookLink"
+                target="_blank"
                 class="hover:opacity-80 transition-opacity duration-150"
                 ><img
                   height="32"
@@ -64,6 +66,7 @@
               <a
                 v-if="socials.whatsappLink"
                 :href="socials.whatsappLink"
+                target="_blank"
                 class="hover:opacity-80 transition-opacity duration-150"
                 ><img
                   height="32"
@@ -75,6 +78,7 @@
               <a
                 v-if="socials.linkedinLink"
                 :href="socials.linkedinLink"
+                target="_blank"
                 class="hover:opacity-80 transition-opacity duration-150"
                 ><img
                   height="32"
@@ -86,6 +90,7 @@
               <a
                 v-if="socials.tiktokLink"
                 :href="socials.tiktokLink"
+                target="_blank"
                 class="hover:opacity-80 pt-[1px] transition-opacity duration-150"
                 ><img
                   height="31"
@@ -97,6 +102,7 @@
               <a
                 v-if="socials.twitterLink"
                 :href="socials.twitterLink"
+                target="_blank"
                 class="hover:opacity-80 pt-[1.5px] transition-opacity duration-150"
                 ><img
                   height="31"
@@ -108,6 +114,7 @@
               <a
                 v-if="socials.youtubeLink"
                 :href="socials.youtubeLink"
+                target="_blank"
                 class="hover:opacity-80 pt-[1px] transition-opacity duration-150"
                 ><img
                   height="32"

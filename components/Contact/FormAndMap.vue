@@ -92,4 +92,36 @@ const props = defineProps({
     required: false,
   },
 });
+
+// TODO: Move this to a composable or plugin (get working for nuxt 3)
+emailjs.init("LscuXh_EF7DCnJFzw");
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // Get form values using original IDs
+  const firstName = document.getElementById("First-name-2").value;
+  const lastName = document.getElementById("Last-name-2").value;
+  const fullName = `${firstName} ${lastName}`.trim();
+
+  // Create template parameters
+  const templateParams = {
+    name: fullName,
+    email: document.getElementById("Email-2").value,
+    message: document.getElementById("Message-2").value,
+  };
+
+  document.getElementById("status").textContent = "Sending...";
+
+  emailjs
+    .send("service_774oiao", "template_rxqzx1u", templateParams)
+    .then(() => {
+      document.getElementById("status").textContent = "Message sent!";
+      this.reset();
+    })
+    .catch((err) => {
+      console.error(err);
+      document.getElementById("status").textContent = "Failed to send.";
+    });
+});
 </script>
