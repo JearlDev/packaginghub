@@ -5,7 +5,7 @@
         <!-- Contact Form -->
         <div class="text-white lg:pr-10">
           <h3 class="h3 mb-7 !text-primary">Get in Touch</h3>
-          <form class="space-y-4">
+          <form id="contactForm" class="space-y-4">
             <div class="grid md:grid-cols-2 gap-4">
               <div>
                 <label class="hidden mb-2" for="name">Full Name</label>
@@ -99,29 +99,26 @@ emailjs.init("LscuXh_EF7DCnJFzw");
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Get form values using original IDs
-  const firstName = document.getElementById("First-name-2").value;
-  const lastName = document.getElementById("Last-name-2").value;
-  const fullName = `${firstName} ${lastName}`.trim();
-
   // Create template parameters
   const templateParams = {
-    name: fullName,
-    email: document.getElementById("Email-2").value,
-    message: document.getElementById("Message-2").value,
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    package_requirements: document.getElementById("package-requirements").value,
+    company_name: document.getElementById("company-name").value,
+    message: document.getElementById("notes").value,
   };
 
-  document.getElementById("status").textContent = "Sending...";
+  // document.getElementById("status").textContent = "Sending...";
 
   emailjs
     .send("service_774oiao", "template_rxqzx1u", templateParams)
     .then(() => {
-      document.getElementById("status").textContent = "Message sent!";
+      // document.getElementById("status").textContent = "Message sent!";
       this.reset();
     })
     .catch((err) => {
       console.error(err);
-      document.getElementById("status").textContent = "Failed to send.";
+      // document.getElementById("status").textContent = "Failed to send.";
     });
 });
 </script>
