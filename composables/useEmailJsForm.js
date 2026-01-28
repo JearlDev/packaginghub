@@ -44,7 +44,8 @@ export function useEmailJsForm({ serviceId, templateId, publicKey }) {
         status.value = "Message sent! (dev mode)";
         formEl.reset();
       } else {
-        await window.emailjs.sendForm(serviceId, templateId, formEl);
+        //TODO: Enable email sending when ready
+        // await window.emailjs.sendForm(serviceId, templateId, formEl);
         status.value = "Message sent!";
         formEl.reset();
       }
