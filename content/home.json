@@ -22,7 +22,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "Packaging Hub is a dynamic packaging Company originally established to help small to medium-size businesses with all their packaging needs, concentrating mainly on the manufacturing of folded cartons."
+                "text": "Packaging Hub is a dynamic packaging company originally established to help small to medium-size businesses with all their packaging needs, concentrating mainly on the manufacturing of folded cartons."
               }
             ]
           },
@@ -58,11 +58,11 @@
               },
               {
                 "type": "link",
-                "url": "mailto:sales@pakhub.co.za",
+                "url": "mailto:sales@packhub.co.za",
                 "children": [
                   {
                     "type": "text",
-                    "text": "sales@pakhub.co.za"
+                    "text": "sales@packhub.co.za"
                   }
                 ]
               },
@@ -93,7 +93,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "All our products are made to the highest standard ensuring that all board and inks are FDA® accredited. We also have a FSC® certification allowing our clients to print the FSC® logo on their cartons. Our licence number is FSC -C161939. This will show your customers that all board sourced for your packaging comes from sustainable forestry, meaning you are doing your bit to ensure our forests are alive for years to come."
+                "text": "All our products are made to the highest standard ensuring that all board and inks are FDA® accredited. We also have a FSC® certification allowing our clients to print the FSC® logo on their cartons. Our licence number is FSC-C190810. This will show your customers that all board sourced for your packaging comes from sustainable forestry, meaning you are doing your bit to ensure our forests are alive for years to come."
               }
             ]
           }
@@ -101,8 +101,8 @@
         "heading": "Featured Products",
         "featuredProducts": [
           {
-            "documentId": "a1dfpxmp1ix2w64egn83qfxz",
-            "description": "We mount printed sheets to fluted board to create your classic litho laminated cartons.",
+            "documentId": "ut3phnazwenodnagqldezq3v",
+            "description": "All food packing manufactured at Packaging Hub is manufactured using FDA accredited inks and materials. Available in all shapes and sizes.",
             "cta": {
               "link": "/contact",
               "openInNewTab": null,
@@ -110,50 +110,16 @@
             },
             "image": {
               "alternativeText": null,
-              "url": "/uploads/about_main_1_cfd9ec36dd.jpg",
-              "width": 453,
-              "height": 667
-            },
-            "title": "Litho Laminated Cartons",
-            "publishedAt": "2025-10-22T12:52:30.225Z"
-          },
-          {
-            "documentId": "jq2k8cd8faehdw4fz4uelqgn",
-            "description": "Available in a variety of shapes and sizes made to your specific requirements.",
-            "cta": {
-              "link": "/contact",
-              "openInNewTab": null,
-              "text": "Get a Quote"
-            },
-            "image": {
-              "alternativeText": null,
-              "url": "/uploads/swingtags_0862_9b2242a4dc.jpg",
-              "width": 453,
-              "height": 480
-            },
-            "title": "Swing/Neck Tags",
-            "publishedAt": "2025-10-22T12:53:48.424Z"
-          },
-          {
-            "documentId": "pda4i88q6ws27kvnuqplkm70",
-            "description": "These paper bags are flexo printed and available in a variety of sizes and colours.",
-            "cta": {
-              "link": "/contact",
-              "openInNewTab": null,
-              "text": "Get a Quote"
-            },
-            "image": {
-              "alternativeText": null,
-              "url": "/uploads/paper_bags_8703_3c2e0ef75a.jpg",
+              "url": "/uploads/retail_packs_8710_4d0246d4f6.jpg",
               "width": 1067,
               "height": 1111
             },
-            "title": "Paper Bags",
-            "publishedAt": "2025-10-22T12:54:23.719Z"
+            "title": "Retail Food Packaging",
+            "publishedAt": "2025-10-22T12:58:26.376Z"
           },
           {
-            "documentId": "s8degpjd85vkc2ldjhzg3eco",
-            "description": "All sleeves are manufactured to your specific needs and supplied either glued or with double-sided tape.",
+            "documentId": "uotxjnp2zxx2c2asqxon1si8",
+            "description": "Personalise these shapes and sizes to suit your requirements.",
             "cta": {
               "link": "/contact",
               "openInNewTab": null,
@@ -161,12 +127,12 @@
             },
             "image": {
               "alternativeText": null,
-              "url": "/uploads/printed_sleeves_8726_813529bdcf.jpg",
-              "width": 453,
-              "height": 480
+              "url": "/uploads/folded_cartons_8703_82cf2a1a9c.jpg",
+              "width": 1067,
+              "height": 1421
             },
-            "title": "Printed Sleeves",
-            "publishedAt": "2025-10-22T12:57:59.586Z"
+            "title": "Folded Cartons",
+            "publishedAt": "2025-10-22T12:56:53.376Z"
           },
           {
             "documentId": "q7w05ceg0uts32wejk8v8vyk",
@@ -186,8 +152,8 @@
             "publishedAt": "2025-10-22T12:56:08.551Z"
           },
           {
-            "documentId": "ut3phnazwenodnagqldezq3v",
-            "description": "All food packing manufactured at Packaging Hub is manufactured using FDA accredited inks and materials. Available in all shapes and sizes.",
+            "documentId": "s8degpjd85vkc2ldjhzg3eco",
+            "description": "All sleeves are manufactured to your specific needs and supplied either glued or with double-sided tape.",
             "cta": {
               "link": "/contact",
               "openInNewTab": null,
@@ -195,12 +161,46 @@
             },
             "image": {
               "alternativeText": null,
-              "url": "/uploads/retail_packs_8710_4d0246d4f6.jpg",
+              "url": "/uploads/printed_sleeves_8726_813529bdcf.jpg",
+              "width": 453,
+              "height": 480
+            },
+            "title": "Printed Sleeves",
+            "publishedAt": "2025-10-22T12:57:59.586Z"
+          },
+          {
+            "documentId": "pda4i88q6ws27kvnuqplkm70",
+            "description": "These paper bags are flexo printed and available in a variety of sizes and colours.",
+            "cta": {
+              "link": "/contact",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/paper_bags_8703_3c2e0ef75a.jpg",
               "width": 1067,
               "height": 1111
             },
-            "title": "Retail Food Packaging",
-            "publishedAt": "2025-10-22T12:58:26.376Z"
+            "title": "Paper Bags",
+            "publishedAt": "2025-10-22T12:54:23.719Z"
+          },
+          {
+            "documentId": "a1dfpxmp1ix2w64egn83qfxz",
+            "description": "We mount printed sheets to fluted board to create your classic litho laminated cartons.",
+            "cta": {
+              "link": "/contact",
+              "openInNewTab": null,
+              "text": "Get a Quote"
+            },
+            "image": {
+              "alternativeText": null,
+              "url": "/uploads/about_main_1_cfd9ec36dd.jpg",
+              "width": 453,
+              "height": 667
+            },
+            "title": "Litho Laminated Cartons",
+            "publishedAt": "2025-10-22T12:52:30.225Z"
           },
           {
             "documentId": "zavd2nnusxoyw73g7yy6ajdx",
@@ -220,8 +220,8 @@
             "publishedAt": "2025-10-22T12:55:40.831Z"
           },
           {
-            "documentId": "uotxjnp2zxx2c2asqxon1si8",
-            "description": "Personalise these shapes and sizes to suit your requirements.",
+            "documentId": "jq2k8cd8faehdw4fz4uelqgn",
+            "description": "Available in a variety of shapes and sizes made to your specific requirements.",
             "cta": {
               "link": "/contact",
               "openInNewTab": null,
@@ -229,12 +229,12 @@
             },
             "image": {
               "alternativeText": null,
-              "url": "/uploads/folded_cartons_8703_82cf2a1a9c.jpg",
-              "width": 1067,
-              "height": 1421
+              "url": "/uploads/swingtags_0862_9b2242a4dc.jpg",
+              "width": 453,
+              "height": 480
             },
-            "title": "Folded Cartons",
-            "publishedAt": "2025-10-22T12:56:53.376Z"
+            "title": "Swing/Neck Tags",
+            "publishedAt": "2025-10-22T12:53:48.424Z"
           },
           {
             "documentId": "shdt24azhzlhtkundezf8sc9",

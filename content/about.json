@@ -19,7 +19,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "Packaging Hub is a dynamic packaging Company originally established to help small to medium-size businesses with all their packaging needs, concentrating mainly on the manufacturing of folded cartons."
+                "text": "Packaging Hub is a dynamic packaging company originally established to help small to medium-size businesses with all their packaging needs, concentrating mainly on the manufacturing of folded cartons."
               }
             ]
           },
@@ -55,11 +55,11 @@
               },
               {
                 "type": "link",
-                "url": "mailto:sales@pakhub.co.za",
+                "url": "mailto:sales@packhub.co.za",
                 "children": [
                   {
                     "type": "text",
-                    "text": "sales@pakhub.co.za"
+                    "text": "sales@packhub.co.za"
                   }
                 ]
               },
