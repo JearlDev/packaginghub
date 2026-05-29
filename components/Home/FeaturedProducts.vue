@@ -14,7 +14,7 @@
         v-if="data?.featuredProducts?.length"
         class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 pt-7 md:pt-10 fade-ani"
       >
-        <a :href="featuredProduct?.cta?.link || '/contact'"
+        <a :href="featuredProduct?.cta?.link || '/contact-us'"
           v-for="featuredProduct in data?.featuredProducts"
           :key="featuredProduct.documentId"
           class="clickable-card hidden-el"

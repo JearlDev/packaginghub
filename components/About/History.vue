@@ -18,7 +18,7 @@
             basis.
           </p>
           <div class="pt-7 hidden-el">
-            <a href="/contact" class="btn btn-primary"> Get in Touch </a>
+            <a href="/contact-us" class="btn btn-primary"> Get in Touch </a>
           </div>
         </div>
       </div>

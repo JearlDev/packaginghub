@@ -77,7 +77,7 @@
         }
       ],
       "mainCTA": {
-        "link": "/contact",
+        "link": "/contact-us",
         "openInNewTab": null,
         "text": "Get in touch"
       },
@@ -102,7 +102,7 @@
         },
         {
           "id": "123",
-          "link": "/contact",
+          "link": "/contact-us",
           "openInNewTab": null,
           "text": "Contact"
         }
