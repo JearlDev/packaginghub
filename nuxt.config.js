@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
   // TODO: update fallback for prod
   sitemap: {
-    url: process.env.NUXT_SITE_URL || "https://site-packaginghub.netlify.app/",
+    url: process.env.NUXT_SITE_URL || "https://packaginghub.co.za/",
     name: process.env.NUXT_SITE_NAME || "Packaging Hub",
     exclude: [
       "/blog/**", // Excludes all pages under /blog TODO: undo when blogs added
@@ -36,8 +36,7 @@ export default defineNuxtConfig({
       //TODO: Re-add GQL_HOST and BACKEND_URL when CMS is ready
       // GQL_HOST: process.env.NUXT_GQL_HOST || "http://localhost:1337/graphql",
       BACKEND_URL: process.env.NUXT_BACKEND_URL || "http://localhost:1337",
-      FRONTEND_URL:
-        process.env.NUXT_SITE_URL || "https://site-packaginghub.netlify.app/",
+      FRONTEND_URL: process.env.NUXT_SITE_URL || "https://packaginghub.co.za/",
       SITE_NAME: process.env.NUXT_SITE_NAME || "Packaging Hub",
       DEFAULT_META_TITLE:
         process.env.NUXT_DEFAULT_META_TITLE ||
